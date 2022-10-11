@@ -1,0 +1,27 @@
+.firstLevelLink {  
+    margin-left: 0px;
+    margin-right:0px;
+}
+
+.firstLevelList {  
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.section--department {
+    background-color: #303B46;
+    color: #fff;
+    padding-top: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+.departmentLink {
+    color: #fff;
+}
+
+.itemContainer--department {
+    padding-top: 0px;
+    margin: 0px;
+    border: 0px;
+}

@@ -1,0 +1,8 @@
+{
+    "store.blog-home": {
+      "blocks": [
+        "blog-all-posts.wordpress-all-posts"
+      ]
+    }
+}
+  

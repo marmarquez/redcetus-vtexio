@@ -1,0 +1,86 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#demo",
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#deals",
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf",
+      //"rich-text#question",
+      //"rich-text#link",
+      "newsletter"
+    ]
+  },
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "https://assets.jumpseller.com/store/redcetus/themes/315971/options/27440010/slider01%20%281%29.jpg?1601430848",
+          "mobileImage": "https://assets.jumpseller.com/store/redcetus/themes/315971/options/27440010/slider01%20%281%29.jpg?1601430848"
+        },
+        {
+          "image": "https://assets.jumpseller.com/store/redcetus/themes/315971/options/27440018/banner3.jpg?1601863820",
+          "mobileImage": "https://assets.jumpseller.com/store/redcetus/themes/315971/options/27440018/banner3.jpg?1601863820"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## Los más vendidos",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+  "rich-text#question": {
+    "props": {
+      "text": "**Sitio de Prueba**",
+      "blockClass": "question"
+    }
+  },
+  "rich-text#link": {
+    "props": {
+      "text": "\n**Encuentranos**\nwww.redcetus.cl",
+      "blockClass": "link"
+    }
+  }
+}
