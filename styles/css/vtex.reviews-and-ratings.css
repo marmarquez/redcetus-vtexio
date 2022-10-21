@@ -15,3 +15,13 @@
 .star--empty {
   color: #FFB100;
 }
+.container {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+@media (max-width: 768px){
+  .container {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}

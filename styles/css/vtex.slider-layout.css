@@ -25,3 +25,15 @@
   padding-left: .5rem;
   padding-right: .5rem;
 }
+
+.sliderArrows--carousel{
+  padding: .5rem;
+  margin: 0 .6rem;
+  background-color: #c2c2c24b !important;
+}
+.paginationDot{
+  background-color: #e2e2e2b9;
+}
+.paginationDot--isActive{
+  background-color: #000000;;
+}

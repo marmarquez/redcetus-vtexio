@@ -6,10 +6,15 @@
   },
   "flex-layout.row#contact-us": {
     "props": {
+      "preventVerticalStretch": true,
+      "colSizing": "equal",
+      "colGap": 7,
+      "horizontalAlign": "around",
       "blockClass": "contact"
     },
     "children": [
-      "flex-layout.col#contact-us"
+      "flex-layout.col#contact-us",
+      "flex-layout.col#datos-contacto"
     ]
   },
   "flex-layout.col#contact-us": {
@@ -25,19 +30,48 @@
   },
   "form#contact-us": {
     "props": {
-      "entity": "contact",
-      "schema": "site-contact"
+      "entity": "CT",
+      "schema": "formulario"
     },
     "children": [
-      "form-input.text#title"/*,
-      "form-input.text#name",
+      "form-input.text#nombre",
       "form-input.text#email",
-      "form-input.textarea#message",
-      "form-submit#contact"*/
+      "form-input.text#telefono",
+      "form-input.textarea#mensaje",
+      "form-submit#contact"
     ],
     "blocks": [
       "form-success#contact-us"
     ]
+  },
+  "form-input.text#nombre": {
+    "props": {
+      "pointer": "#/properties/nombre",
+      "label": "Nombre *"
+    }
+  },
+  "form-input.text#telefono": {
+    "props": {
+      "pointer": "#/properties/telefono",
+      "label": "Teléfono "
+    }
+  },
+  "form-input.text#email": {
+    "props": {
+      "pointer": "#/properties/email",
+      "label": "Email *"
+    }
+  },
+  "form-input.textarea#mensaje": {
+    "props": {
+      "pointer": "#/properties/mensaje",
+      "label": "Mensaje *"
+    }
+  },
+  "form-submit#contact": {
+    "props": {
+      "label": "Enviar"
+    }
   },
   "form-success#contact-us": {
     "children": [
@@ -46,34 +80,34 @@
   },
   "rich-text#success-submit": {
     "props": {
-      "text": "Gracias por contactarnos, te responderemos en lo antes posible.",
+      "text": "Gracias por contactarnos, te responderemos en lo antes posible!",
       "textAlignment": "CENTER",
       "textPosition": "CENTER"
     }
   },
-  "form-input.text#title": {
+  "flex-layout.col#datos-contacto": {
     "props": {
-      "pointer": "#/properties/title"
-    }
-  }/*,
-  "form-input.text#name": {
+      "verticalAlign": "top"
+    },
+    "children": [
+      "rich-text#datos-contacto-1",
+      "rich-text#datos-contacto-2",
+      "rich-text#datos-contacto-3"
+    ]
+  },
+  "rich-text#datos-contacto-1": {
     "props": {
-      "pointer": "#/properties/name"
+      "text": "email: ventas@redcetus.cl"
     }
   },
-  "form-input.text#email": {
+  "rich-text#datos-contacto-2": {
     "props": {
-      "pointer": "#/properties/email"
+      "text": "teléfono: +56 222649294"
     }
   },
-  "form-input.textarea#message": {
+  "rich-text#datos-contacto-3": {
     "props": {
-      "pointer": "#/properties/message"
+      "text": "dirección: Doctor Manuel Barros Borgoño 110 Of.0109, Providencia"
     }
-  },
-  "form-submit#contact": {
-    "props": {
-      "label": "Submit"
-    }
-  }*/
+  }
 }

@@ -1,0 +1,16 @@
+.shelfContentContainer {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+@media (max-width: 768px){
+    .shelfContentContainer {
+        margin-left: 2%;
+        margin-right: 2%;
+    }   
+    .title {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 1rem .5rem;
+    }
+}

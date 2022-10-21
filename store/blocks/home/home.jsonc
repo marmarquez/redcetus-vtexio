@@ -45,11 +45,15 @@
 
   "rich-text#shelf-title": {
     "props": {
-      "text": "## Los más vendidos",
+      "text": "## LOS MÁS VENDIDOS",
       "blockClass": "shelfTitle"
     }
   },
   "flex-layout.row#shelf": {
+    "props": {
+      "marginBottom": 8,
+      "blockClass": "rowVitrina"
+    },
     "children": ["list-context.product-list#demo1"]
   },
   "list-context.product-list#demo1": {

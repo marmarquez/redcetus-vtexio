@@ -1,0 +1,12 @@
+.container{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: .9rem;
+}
+@media (max-width: 768px){
+    .container{
+        margin-left: 2%;
+        margin-right: 2%;
+        font-size: .9rem;
+    }    
+}
