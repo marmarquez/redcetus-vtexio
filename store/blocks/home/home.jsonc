@@ -6,8 +6,12 @@
       "responsive-layout.desktop#banner-texto",
       "responsive-layout.mobile#banner-texto",
       // "flex-layout.row#deals",
-      "rich-text#shelf-title",
+      // "rich-text#shelf-title",
+      "flex-layout.row#titulo-vitrina-1",
       "flex-layout.row#shelf",
+      "flex-layout.row#titulo-vitrina-2",
+      // "rich-text#shelf-title-2",
+      "flex-layout.row#shelf-2",
       //"rich-text#question",
       //"rich-text#link",
       "newsletter"
@@ -42,11 +46,28 @@
       "blockClass": "carousel"
     }
   },
-
+  // vitrina 1
+  "flex-layout.row#titulo-vitrina-1": {
+    "props": {
+      "colSizing": "auto",
+      "colGap": 5,
+      "horizontalAlign": "center"
+    },
+    "children": ["rich-text#shelf-title","rich-text#ver-mas-1"]
+  },
   "rich-text#shelf-title": {
     "props": {
       "text": "## Los más vendidos",
       "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#ver-mas-1": {
+    "props": {
+      "text": "[Ver más](/)",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-body",
+      "blockClass": "vermasVitrinas"
     }
   },
   "flex-layout.row#shelf": {
@@ -65,6 +86,68 @@
     }
   },
   "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      // "navigationStep": 1,
+      // "slideTransition": {
+      //   "speed": 700, 
+      //   "delay": 100
+      // },
+      "autoplay": {
+        "timeout": 3800
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "always",
+      "blockClass": "shelf"
+    }
+  },
+  // vitrina 2
+  "flex-layout.row#titulo-vitrina-2": {
+    "props": {
+      "colSizing": "auto",
+      "colGap": 5,
+      "horizontalAlign": "center"
+    },
+    "children": ["rich-text#shelf-title-2","rich-text#ver-mas-2"]
+  },
+  "rich-text#shelf-title-2": {
+    "props": {
+      "text": "## Cámaras de seguridad",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#ver-mas-2": {
+    "props": {
+      "text": "[Ver más](/)",
+      "font": "t-body",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "vermasVitrinas"
+    }
+  },
+  "flex-layout.row#shelf-2": {
+    "props": {
+      "marginBottom": 8,
+      "blockClass": "rowVitrina"
+    },
+    "children": ["list-context.product-list#demo1-2"]
+  },
+  "list-context.product-list#demo1-2": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products-2"],
+    "props": {
+      "orderBy": "OrderByBestDiscountDESC",
+      "category": "33/34",
+      "maxItems": 15
+    }
+  },
+  "slider-layout#demo-products-2": {
     "props": {
       "itemsPerPage": {
         "desktop": 5,

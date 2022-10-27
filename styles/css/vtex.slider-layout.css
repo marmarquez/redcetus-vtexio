@@ -41,6 +41,17 @@
 .paginationDot--isActive{
   background-color: #000000;;
 }
+/* .slide--shelf{
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  transition: border 200ms ease;
+} */
+/* .slide--shelf:hover{
+  border: 1px solid #929292;
+} */
+.sliderTrack--shelf{
+  grid-gap: 12px
+}
 /* @media (min-width: 768px){
   .sliderLayoutContainer--shelf{
     margin: 0 4%;

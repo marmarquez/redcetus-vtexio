@@ -1,6 +1,8 @@
 .container--deals {
-  color: #ffffff;
+  color: #fff;
   text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
   justify-content: center;
 }
 
@@ -75,6 +77,16 @@
 }
 .paragraph--textoContacto{
   margin-bottom: 0px;
+}
+.paragraph--vermasVitrinas{
+  padding: .4rem .65rem;
+  color: #797979;
+  border: 1px solid #797979;
+  border-radius: 20px;
+}
+.link--vermasVitrinas{
+  color: #000;
+  text-decoration: none;
 }
 @media only screen and (min-width: 640px) {
   .container--question .strong {
