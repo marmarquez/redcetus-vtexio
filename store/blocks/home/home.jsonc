@@ -2,10 +2,10 @@
   "store.home": {
     "blocks": [
       "list-context.image-list#demo",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
-      "flex-layout.row#deals",
+      "responsive-layout.desktop#banner-texto",
+      "responsive-layout.mobile#banner-texto",
+      // "flex-layout.row#deals",
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
       //"rich-text#question",
@@ -45,7 +45,7 @@
 
   "rich-text#shelf-title": {
     "props": {
-      "text": "## LOS MÁS VENDIDOS",
+      "text": "## Los más vendidos",
       "blockClass": "shelfTitle"
     }
   },
@@ -60,7 +60,8 @@
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#demo-products"],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "orderBy": "OrderByTopSaleDESC",
+      "maxItems": 15
     }
   },
   "slider-layout#demo-products": {
@@ -68,10 +69,20 @@
       "itemsPerPage": {
         "desktop": 5,
         "tablet": 3,
-        "phone": 1
+        "phone": 2
+      },
+      // "navigationStep": 1,
+      // "slideTransition": {
+      //   "speed": 700, 
+      //   "delay": 100
+      // },
+      "autoplay": {
+        "timeout": 3800
       },
       "infinite": true,
-      "fullWidth": false,
+      "fullWidth": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "always",
       "blockClass": "shelf"
     }
   },

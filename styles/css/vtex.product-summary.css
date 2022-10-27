@@ -10,7 +10,16 @@
 .container:hover :global(.vtex-modal-layout-0-x-triggerContainer) {
   opacity: 1;
 }
-
+.element :global(.vtex-button){
+  background-color: #fff;
+  border-color: #79b10a;
+  color: #79b10a;
+  font-size: .9rem;
+  transition: letter-spacing 200ms ease;
+}
+.element :global(.vtex-button):hover{
+  letter-spacing: 2px;
+}
 @media screen and (max-width: 40em) {
   .container :global(.vtex-modal-layout-0-x-triggerContainer) {
     display: none;
@@ -32,6 +41,13 @@
 .container {
   text-align: start;
 }
+
+/* .container :global(.vtex-button){
+  background-color: #fff;
+  color: #000;
+  font-size: .9rem;
+  border-color: #000;
+} */
 
 .imageContainer {
   text-align: center;

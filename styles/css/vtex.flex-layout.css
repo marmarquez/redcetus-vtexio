@@ -11,25 +11,6 @@
   margin-right: 5%;  
 }
 
-@media (max-width: 768px){
-  .flexRow--rowDescripcionPdp{
-    margin-left: 2%;
-    margin-right: 2%;  
-  }  
-}
-@media screen and (min-width: 40em) {
-  .flexRowContent--menu-link,
-  .flexRowContent--main-header {
-    padding: 0 1rem;
-  }
-}
-@media screen and (min-width: 80rem) {
-  .flexRowContent--menu-link,
-  .flexRowContent--main-header {
-    padding: 0 0.25rem;
-  }
-}
-
 .flexRowContent--menu-link {
   background-color: #303B46;
   color: #fff;
@@ -55,8 +36,8 @@
   font-size: 14px;
 }
 .flexRow--deals {
-  background-color: #a7afbd;
-  padding: 14px 0px;
+  background-color: #6F6F6F;;
+  padding: 1.4rem 0px;
 }
 
 .flexRow--deals .stretchChildrenWidth {
@@ -76,34 +57,91 @@
 .flexCol--productCountCol {
   align-items: flex-start;
 }
-
 .flexCol--orderByCol {
   align-items: flex-end;
 }
-
 .flexCol--orderByMobileCol {
   width: 42%;
 }
-
 .flexCol--filterMobileCol {
   width: 38%;
 }
-
 .flexRow--quickviewMainRow {
   display: flex;
   max-height: 100%;
 }
-
 .flexColChild--quickviewDetails:first-child {
   overflow-y: auto;
   height: 66% !important;
   overflow-x: hidden;
 }
-
 .flexColChild--quickviewDetails:last-child {
   height: 34% !important;
 }
-
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
+}
+.flexRow--contact {
+  max-width: 80%;
+  margin: auto;
+}
+.flexRowContent--contact :global(.vtex-input__label),
+.flexRowContent--contact :global(.vtex-textarea__label) {
+  font-size: 1rem;
+  color: #3f3f40;
+}
+.flexRowContent--contact :global(.vtex-input),
+.flexRowContent--contact :global(.vtex-textarea) {
+  display: block;
+  margin-bottom: 1rem;
+}
+.flexRow--rowFooter{
+  width: 90%;
+  margin: auto;
+}
+.flexRowContent--rowFooter{
+  border-top: 1px solid #e4e4e4;
+}
+.flexRowContent--rowBtnComprarPdp :global(.vtex-button){
+  padding: .65rem .5rem;
+  background-color: #79b10a;
+  border-color: #79b10a;
+  letter-spacing: 2px;
+  font-weight: 500;
+  transition: letter-spacing 300ms ease;
+}
+.flexRowContent--rowBtnComprarPdp :global(.vtex-button):hover{
+  letter-spacing: 3px;
+}
+.flexRow--rowResultPdc{
+  margin: .5rem 2.5%;
+}
+.flexRow--rowTitleSearch{
+  margin: 0 2.5%;
+}
+@media screen and (min-width: 40em) {
+  .flexRowContent--menu-link,
+  .flexRowContent--main-header {
+    padding: 0 1rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .flexRowContent--menu-link,
+  .flexRowContent--main-header {
+    padding: 0 0.25rem;
+  }
+}
+@media(min-width: 768px){
+  .flexRow--rowVitrina{
+    margin: 0 4%;
+  }
+}
+@media (max-width: 768px){
+  .flexRow--rowDescripcionPdp{
+    margin-left: 2%;
+    margin-right: 2%;  
+  }  
+  .flexRow--rowVitrina{
+    margin: 0 2%;
+  }
 }

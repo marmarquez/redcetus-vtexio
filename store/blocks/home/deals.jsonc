@@ -1,4 +1,8 @@
 {
+  // DESKTOP
+  "responsive-layout.desktop#banner-texto": {
+    "children": ["flex-layout.row#deals"]
+  },
   "flex-layout.row#deals": {
     "children": [
       "flex-layout.col#deals1",
@@ -10,7 +14,6 @@
       "blockClass": "deals"
     }
   },
-
   "flex-layout.col#deals1": {
     "children": [
       "image#deal1",
@@ -25,7 +28,7 @@
   },
   "rich-text#deal1": {
     "props": {
-      "text": "Free shipping",
+      "text": "Despachos",
       "blockClass": "deals"
     }
   },
@@ -43,7 +46,7 @@
   },
   "rich-text#deal2": {
     "props": {
-      "text": "One day delivery",
+      "text": "Envíos a todo Chile",
       "blockClass": "deals"
     }
   },
@@ -61,7 +64,7 @@
   },
   "rich-text#deal3": {
     "props": {
-      "text": "Pick up in store",
+      "text": "Retiro en tienda",
       "blockClass": "deals"
     }
   },
@@ -79,8 +82,42 @@
   },
   "rich-text#deal4": {
     "props": {
-      "text": "Exclusive deals",
+      "text": "Convenios con empresas",
       "blockClass": "deals"
     }
+  },
+
+  // MOBILE
+  "responsive-layout.mobile#banner-texto": {
+    "children": ["flex-layout.row#banner-texto-mob"]
+  },
+  "flex-layout.row#banner-texto-mob": {
+    "props": {
+      "blockClass": "deals"
+    },
+    "children": ["slider-layout#banner-texto"]
+  },
+  "slider-layout#banner-texto": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 1,
+        "phone": 1
+      },
+      "autoplay": {
+        "timeout": 3800
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "sliderBannerTexto"
+    },
+    "children": [
+      "flex-layout.col#deals1",
+      "flex-layout.col#deals2",
+      "flex-layout.col#deals3",
+      "flex-layout.col#deals4"
+    ]
   }
 }

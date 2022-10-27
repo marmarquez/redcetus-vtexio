@@ -5,7 +5,7 @@
 }
 
 .container--shelfTitle {
-  color: #727273;
+  color: #000;
   justify-content: center;
   text-align: center;
 }
@@ -66,7 +66,16 @@
   font-size: 28px;
   font-weight: 700;
 }
-
+.link--textoHeaderContacto{
+  color: #808080;
+  text-decoration: none;
+  font-size: .9rem;
+  margin: 0 2rem;
+  /* padding-bottom: .25rem; */
+}
+.paragraph--textoContacto{
+  margin-bottom: 0px;
+}
 @media only screen and (min-width: 640px) {
   .container--question .strong {
     font-size: 40px;

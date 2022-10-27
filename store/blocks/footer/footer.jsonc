@@ -4,7 +4,7 @@
   },
   "footer-layout.desktop": {
     "props": {
-      "blockClass": "rowFooter"
+      "blockClass": "footerDesktop"
     },
     "children": [
       "flex-layout.row#footer-1-desktop"
@@ -16,8 +16,10 @@
     "props": {
       "colSizing": "auto",
       "horizontalAlign": "around",
+      "marginTop": 9,
       "paddingTop": 8,
-      "paddingBottom": 8
+      "paddingBottom": 8,
+      "blockClass": "rowFooter"
     },
     "children": [
       "rich-text#copy-right",

@@ -90,24 +90,41 @@
       "verticalAlign": "top"
     },
     "children": [
+      "rich-text#info-contacto",
       "rich-text#datos-contacto-1",
       "rich-text#datos-contacto-2",
-      "rich-text#datos-contacto-3"
+      "rich-text#datos-contacto-3",
+      "image#mapa-contacto"
     ]
+  },
+  "rich-text#info-contacto": {
+    "props": {
+      "text": "Información de Contacto",
+      "font": "t-heading-3"
+    }
   },
   "rich-text#datos-contacto-1": {
     "props": {
-      "text": "email: ventas@redcetus.cl"
+      "text": "email: ventas@redcetus.cl",
+      "blockClass": "textoContacto"
     }
   },
   "rich-text#datos-contacto-2": {
     "props": {
-      "text": "teléfono: +56 222649294"
+      "text": "teléfono: +56 222649294",
+      "blockClass": "textoContacto"
     }
   },
   "rich-text#datos-contacto-3": {
     "props": {
-      "text": "dirección: Doctor Manuel Barros Borgoño 110 Of.0109, Providencia"
+      "text": "dirección: Doctor Manuel Barros Borgoño 110 Of.0109, Providencia.",
+      "blockClass": "textoContacto"
+    }
+  },
+  "image#mapa-contacto": {
+    "props": {
+      "src": "/arquivos/direccion-redcetus.png",
+      "maxHeight": 300
     }
   }
 }

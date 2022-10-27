@@ -119,6 +119,9 @@
     font-size: 1.75rem;
     font-weight: 700;
   }
+  /* .shippingContainer :global(.vtex-address-form__state vtex-address-form__field--large){
+    width: 250px;
+  } */
 }
 @media (max-width: 768px){
   .productDescriptionTitle {

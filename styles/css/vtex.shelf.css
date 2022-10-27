@@ -2,6 +2,10 @@
     margin-left: 5%;
     margin-right: 5%;
 }
+.title{
+    color: #434343;
+    font-weight: 600;
+}
 @media (max-width: 768px){
     .shelfContentContainer {
         margin-left: 2%;

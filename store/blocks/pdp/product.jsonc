@@ -8,7 +8,8 @@
       "product-specification-group#table",
       "product-reviews",
       "product-questions-and-answers",
-      "shelf.relatedProducts"
+      "flex-layout.row#vitrina-relacionados"
+      // "shelf.relatedProducts"
     ]
   },
   // BREADCRUMB
@@ -36,12 +37,14 @@
       // "borderColor": "white",
       // "borderWidth": 5,
       // "border": ["left","right"],
-      "colGap": 2,
-      "rowGap": 2,
-      "marginTop": 1,
+      // "colGap": 2,
+      "rowGap": 3,
+      "marginTop": 2,
       "marginBottom": 6,
       "paddingTop": 2,
       "paddingBottom": 2,
+      "colSizing": "auto",
+      "horizontalAlign": "between",
       "blockClass": "rowProductInformation"
     },
     "children": ["flex-layout.col#stack", "flex-layout.col#right-col"]
@@ -49,7 +52,7 @@
   "flex-layout.col#stack": {
     "children": ["stack-layout"],
     "props": {
-      "width": "50%",
+      "width": "48%",
       "rowGap": 0
     }
   },
@@ -68,11 +71,11 @@
   },
   "product-images": {
     "props": {
-      "aspectRatio": {
-        "desktop": "auto",
-        "phone": "16:9"
-      },
-      "maxHeight": 300,
+      // "aspectRatio": {
+      //   "desktop": "auto",
+      //   "phone": "16:9"
+      // },
+      "maxHeight": 400,
       "displayThumbnailsArrows": true
     }
   },
@@ -87,16 +90,17 @@
   "flex-layout.col#right-col": {
     "props": {
       "preventVerticalStretch": true,
-      "rowGap": 0
+      "rowGap": 2,
+      "width": "48%"
     },
     "children": [
       "flex-layout.row#product-name",
+      "product-identifier.product",
       "product-rating-summary",
       "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
       "product-installments",
       "product-separator",
-      "product-identifier.product",
       "sku-selector",
       "product-quantity",
       "product-assembly-options",
@@ -124,8 +128,9 @@
 
   "flex-layout.row#buy-button": {
     "props": {
-      "marginTop": 2,
-      "marginBottom": 4
+      "marginTop": 3,
+      "marginBottom": 6,
+      "blockClass": "rowBtnComprarPdp"
     },
     "children": ["add-to-cart-button"]
   },
@@ -192,7 +197,13 @@
     },
     "children": ["product-description"]
   },
-
+  "flex-layout.row#vitrina-relacionados": {
+    "props": {
+      "marginBottom": 7,
+      "blockClass": "rowVitrinaRelacionados"
+    },
+    "children": ["shelf.relatedProducts"]
+  },
   "shelf.relatedProducts": {
     "blocks": ["product-summary.shelf"],
     "props": {
