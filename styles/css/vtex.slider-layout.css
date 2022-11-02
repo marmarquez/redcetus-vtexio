@@ -52,6 +52,12 @@
 .sliderTrack--shelf{
   grid-gap: 12px
 }
+.caretIcon--sliderBannerTexto{
+  color: #fff;
+}
+.sliderArrows--sliderBannerTexto{
+  padding: .35rem .75rem;
+}
 /* @media (min-width: 768px){
   .sliderLayoutContainer--shelf{
     margin: 0 4%;

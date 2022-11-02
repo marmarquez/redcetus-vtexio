@@ -115,6 +115,14 @@
       "minicart.v2"
     ]
   },
+  "login": {
+    "props": {
+      "showIconProfile": true,
+      "hideIconLabel": false,
+      "iconLabel": "Ingresar"
+      // "hasGoogleOneTap": true
+    }
+  },
   "flex-layout.col#logo-desktop": {
     "props": {
       "verticalAlign": "middle"

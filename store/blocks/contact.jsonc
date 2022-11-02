@@ -105,19 +105,19 @@
   },
   "rich-text#datos-contacto-1": {
     "props": {
-      "text": "email: ventas@redcetus.cl",
+      "text": "**Email:** ventas@redcetus.cl",
       "blockClass": "textoContacto"
     }
   },
   "rich-text#datos-contacto-2": {
     "props": {
-      "text": "teléfono: +56 222649294",
+      "text": "**Teléfono:** +56 222649294",
       "blockClass": "textoContacto"
     }
   },
   "rich-text#datos-contacto-3": {
     "props": {
-      "text": "dirección: Doctor Manuel Barros Borgoño 110 Of.0109, Providencia.",
+      "text": "**Dirección:** Doctor Manuel Barros Borgoño 110 Of.0109, Providencia.",
       "blockClass": "textoContacto"
     }
   },

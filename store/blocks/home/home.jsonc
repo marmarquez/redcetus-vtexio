@@ -51,6 +51,7 @@
     "props": {
       "colSizing": "auto",
       "colGap": 5,
+      "preserveLayoutOnMobile": true,
       "horizontalAlign": "center"
     },
     "children": ["rich-text#shelf-title","rich-text#ver-mas-1"]
@@ -112,6 +113,7 @@
     "props": {
       "colSizing": "auto",
       "colGap": 5,
+      "preserveLayoutOnMobile": true,
       "horizontalAlign": "center"
     },
     "children": ["rich-text#shelf-title-2","rich-text#ver-mas-2"]

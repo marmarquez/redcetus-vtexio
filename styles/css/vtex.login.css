@@ -1,3 +1,15 @@
 .container :global(.vtex-button):hover{
     background-color: transparent !important;
 }
+.button :global(.vtex-button){
+    background-color: #fff;
+    border-color: #9f9f9f;
+}
+.button :global(.vtex-button__label){
+    font-size: 1rem;
+    color: #3f3f3f;
+    text-transform: none;
+}
+.button :hover{
+    border-color: #000;
+}

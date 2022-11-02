@@ -7,13 +7,13 @@
 }
 
 .container--shelfTitle {
-  color: #000;
   justify-content: center;
   text-align: center;
 }
 
 .headingLevel2--shelfTitle {
-  font-weight: 200;
+  color: #434343;
+  font-weight: 600;
 }
 
 .container--deals .paragraph {
@@ -87,6 +87,17 @@
 .link--vermasVitrinas{
   color: #000;
   text-decoration: none;
+}
+
+@media (max-width: 768px){
+  .headingLevel2--shelfTitle{
+    font-size: 1.75rem;
+  }
+  .paragraph--vermasVitrinas{
+    padding: .2rem .45rem;
+    width: max-content;
+    margin-right: .35rem;
+  }
 }
 @media only screen and (min-width: 640px) {
   .container--question .strong {

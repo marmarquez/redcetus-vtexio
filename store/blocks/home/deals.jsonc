@@ -125,8 +125,11 @@
       },
       "infinite": true,
       "fullWidth": true,
-      "showNavigationArrows": "never",
+      "showNavigationArrows": "mobileOnly",
       "showPaginationDots": "never",
+      "arrowSize": {
+        "mobile": 16
+      },
       "blockClass": "sliderBannerTexto"
     },
     "children": [
