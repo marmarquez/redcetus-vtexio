@@ -101,9 +101,11 @@
 }
 .flexRowContent--rowFooter{
   border-top: 1px solid #e4e4e4;
+  display: flex;
+  align-items: center;
 }
 .flexRowContent--rowBtnComprarPdp :global(.vtex-button){
-  padding: .65rem .5rem;
+  padding: .35rem .5rem;
   background-color: #79b10a;
   border-color: #79b10a;
   letter-spacing: 2px;

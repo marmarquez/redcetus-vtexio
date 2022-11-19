@@ -2,14 +2,24 @@
   "product-summary.shelf": {
     "children": [
       "stack-layout#prodsum",
+      "vtex.store-components:product-brand#vitrina",
       "product-summary-name",
       //"flex-layout.col#productRating",
       "product-summary-space",
       "product-list-price#summary",
       "flex-layout.row#selling-price-savings",
-      "product-installments#summary",
+      // "product-installments#summary",
       "add-to-cart-button"
     ]
+  },
+  "vtex.store-components:product-brand#vitrina":{
+    "props": {
+      "displayMode": "logo",
+      "fallbackToText": true,
+      "height": 30,
+      "withLink": "logoAndText",
+      "blockClass": "brandVitrina"
+    }
   },
   "flex-layout.col#productRating": {
     "props": {
@@ -17,7 +27,6 @@
     },
     "children": ["product-rating-inline"]
   },
-
   "stack-layout#prodsum": {
     "children": [
       "product-summary-image#shelf",

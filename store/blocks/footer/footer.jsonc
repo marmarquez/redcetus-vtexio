@@ -14,18 +14,34 @@
   },
   "flex-layout.row#footer-1-desktop": {
     "props": {
+      "fullWidth": true,
       "colSizing": "auto",
       "horizontalAlign": "around",
       "marginTop": 9,
       "paddingTop": 8,
       "paddingBottom": 8,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
       "blockClass": "rowFooter"
     },
     "children": [
       "rich-text#copy-right",
+      "image#logo-vtex",
       "social-networks",
       "accepted-payment-methods"
     ]
+  },
+  "rich-text#copy-right": {
+    "props": {
+      "text": "© 2022 RedCetus | Todos los derechos reservados",
+      "blockClass": "footer"
+    }
+  },
+  "image#logo-vtex": {
+    "props": {
+      "src": "/arquivos/logo-vtex.svg"
+      // "maxWidth": 80
+    }
   },
   "social-networks": {
     "props": {
@@ -48,12 +64,6 @@
   "accepted-payment-methods": {
     "props": {
       "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
-    }
-  },
-  "rich-text#copy-right": {
-    "props": {
-      "text": "© 2022 RedCetus. Todos los derechos reservados.",
-      "blockClass": "footer"
     }
   },
 
@@ -83,6 +93,7 @@
     },
     "children": [
       "social-networks",
+      "image#logo-vtex",
       "accepted-payment-methods",
       "rich-text#footer-mobile"
     ]

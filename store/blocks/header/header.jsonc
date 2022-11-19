@@ -8,12 +8,10 @@
   "header-layout.desktop": {
     "children": [
       "flex-layout.row#1-desktop",
-      //"flex-layout.row#2-desktop",
       "sticky-layout#4-desktop",
       "sticky-layout#3-desktop"
     ]
   },
-
   "flex-layout.row#1-desktop": {
     "children": ["telemarketing"],
     "props": {
@@ -39,17 +37,6 @@
       "mobileMode": true
     }
   },
-/*  "flex-layout.row#2-desktop": {
-    "children": ["notification.bar#home"],
-    "props": {
-      "fullWidth": "true"
-    }
-  },
-  "notification.bar#home": {
-    "props": {
-      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
-    }
-  },*/
   "sticky-layout#3-desktop": {
     "props": {
       "blockClass": "sticky-header"
@@ -69,21 +56,6 @@
       "category-menu"
     ]
   },
-  /*"flex-layout.row#3-desktop": {
-    "props": {
-      "blockClass": "menu-link",
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
-    },
-    "children": [
-      "flex-layout.row#3-desktop"/*,
-      "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#institutional"*/
-  //  ]
-  //},
   "flex-layout.col#spacer": {
     "props": {
       "width": "grow"
@@ -104,16 +76,22 @@
       "fullWidth": true,
       "blockClass": "main-header"
     },
+    "title": "Header Desktop",
     "children": [
       "flex-layout.col#logo-desktop",
-      //"category-menu",
       "flex-layout.col#spacer",
       "rich-text#xontacto-header",
       "search-bar",
-      // "locale-switcher",
       "login",
       "minicart.v2"
     ]
+  },
+  "search-bar": {
+    "props": {
+      "openAutocompleteOnFocus": true,
+      "placeholder": "Buscar ...",
+      "blockClass": "searchHeader"
+    }
   },
   "login": {
     "props": {
