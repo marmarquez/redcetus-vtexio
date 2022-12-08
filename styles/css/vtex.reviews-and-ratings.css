@@ -7,21 +7,19 @@
 .inlineContainer {
   margin-left: 0rem;
 }
-
 .star--filled {
   color: #FFB100;
 }
-
 .star--empty {
-  color: #FFB100;
+  color: #c6c6c6;
 }
 .container {
+  padding: 0px;
   margin-left: 5%;
   margin-right: 5%;
 }
 @media (max-width: 768px){
   .container {
-    margin-left: 2%;
-    margin-right: 2%;
+    padding: 0px;
   }
 }

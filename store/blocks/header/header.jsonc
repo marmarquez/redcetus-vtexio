@@ -8,7 +8,7 @@
   "header-layout.desktop": {
     "children": [
       "flex-layout.row#1-desktop",
-      "sticky-layout#4-desktop",
+      "flex-layout.row#4-desktop",
       "sticky-layout#3-desktop"
     ]
   },
@@ -16,49 +16,6 @@
     "children": ["telemarketing"],
     "props": {
       "fullWidth": true
-    }
-  },
-  "category-menu": {
-    "props": {
-      "showAllDepartments": false,
-      "showSubcategories": true,
-      "menuDisposition": "left",
-      "departments": [],
-      "sortSubcategories": "name"
-    }
-  },
-  "category-menu#mobile": {
-    "props": {
-      "showAllDepartments": false,
-      "showSubcategories": true,
-      "menuDisposition": "left",
-      "departments": [],
-      "sortSubcategories": "name",
-      "mobileMode": true
-    }
-  },
-  "sticky-layout#3-desktop": {
-    "props": {
-      "blockClass": "sticky-header"
-    },
-    "children": ["flex-layout.row#3-desktop"]
-  },
-  "flex-layout.row#3-desktop": {
-    "props": {
-      "blockClass": "menu-link",
-      "horizontalAlign": "left",
-      "verticalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
-    },
-    "children": [
-      "category-menu"
-    ]
-  },
-  "flex-layout.col#spacer": {
-    "props": {
-      "width": "grow"
     }
   },
   "sticky-layout#4-desktop": {
@@ -80,18 +37,43 @@
     "children": [
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
-      "rich-text#xontacto-header",
+      "rich-text#contacto-header",
       "search-bar",
       "login",
       "minicart.v2"
     ]
   },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#logo-desktop"]
+  },
+  "rich-text#contacto-header": {
+    "props":{
+      "text": "[CONTACTO](/contacto)",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-body",
+      "blockClass": "textoHeaderContacto"
+    }
+  },
   "search-bar": {
     "props": {
       "openAutocompleteOnFocus": true,
-      "placeholder": "Buscar ...",
+      "placeholder": "Buscar",
       "blockClass": "searchHeader"
-    }
+    },
+    "blocks": ["autocomplete-result-list.v2"]
+  },
+  "autocomplete-result-list.v2": {
+    "props": {
+      "maxTopSearches": 5,
+      "maxHistory": 5,
+      "maxSuggestedProducts": 3,
+      "maxSuggestedTerms": 5
+    },
+    "blocks": ["product-summary.shelf"]
   },
   "login": {
     "props": {
@@ -101,39 +83,51 @@
       // "hasGoogleOneTap": true
     }
   },
-  "flex-layout.col#logo-desktop": {
+  "sticky-layout#3-desktop": {
     "props": {
-      "verticalAlign": "middle"
+      "blockClass": "sticky-header"
     },
-    "children": ["logo#desktop"]
+    "children": ["flex-layout.row#3-desktop"]
   },
-  "rich-text#xontacto-header": {
-    "props":{
-      "text": "[CONTACTO](/contacto)",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-body",
-      "blockClass": "textoHeaderContacto"
+  "flex-layout.row#3-desktop": {
+    "props": {
+      "blockClass": "menu-link",
+      "horizontalAlign": "left",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "category-menu"
+    ]
+  },
+  "category-menu": {
+    "props": {
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "left",
+      "departments": [],
+      "sortSubcategories": "name"
     }
   },
-  "flex-layout.col#category-menu": {
+  "flex-layout.col#spacer": {
     "props": {
-      "verticalAlign": "middle"
-    },
-    "children": ["vtex.menu@2.x:menu#category-menu"]
+      "width": "grow"
+    }
   },
-  "logo#desktop": {
+  "logo#logo-desktop": {
     "props": {
-      "title": "Logo",
+      "title": "Redcetus",
       "href": "/",
-      "url": "https://redcetuscl.myvtex.com/api/license-manager/site/pub/accounts/d3f95d1c13ae4e9bb716c036ab09817b/logos/show",
+      "url": "/arquivos/logo-redcetus.png",
       "width": "180"
     }
   },
 
   // MOBILE
   "header-layout.mobile": {
-    "children": ["sticky-layout#1-mobile"]
+    "children": ["sticky-layout#1-mobile","flex-layout.row#search-bar-mobile"]
   },
   "sticky-layout#1-mobile": {
     "children": ["flex-layout.row#1-mobile"]
@@ -141,7 +135,7 @@
   "flex-layout.row#1-mobile": {
     "children": [
       "category-menu#mobile",
-      "logo#mobile",
+      "logo#logo-mobile",
       "flex-layout.col#spacer",
       "login",
       "minicart.v2"
@@ -153,23 +147,33 @@
       "fullWidth": true
     }
   },
-  "drawer": {
-    "children": ["menu#drawer"]
-  },
-
-  "menu#drawer": {
-    "children": ["category-menu#mobile"],
+  "category-menu#mobile": {
     "props": {
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "left",
+      "departments": [],
+      "sortSubcategories": "name",
       "mobileMode": true
     }
   },
-
-  "logo#mobile": {
+  "logo#logo-mobile": {
     "props": {
-      "title": "Logo",
+      "title": "Redcetus",
       "href": "/",
-      "url": "https://redcetuscl.myvtex.com/api/license-manager/site/pub/accounts/d3f95d1c13ae4e9bb716c036ab09817b/logos/show",
-      "width": "70"
+      "url": "/arquivos/logo-redcetus.png",
+      "width": "110"
+    }
+  },
+  "flex-layout.row#search-bar-mobile": {
+    "props": {
+      "blockClass": "rowSearchBarMob"
+    },
+    "children": ["search-bar#mobile"]
+  },
+  "search-bar#mobile": {
+    "props": {
+      "blockClass": "searchHeaderMobile"
     }
   }
 }
