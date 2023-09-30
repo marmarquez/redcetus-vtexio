@@ -6,14 +6,10 @@
       "responsive-layout.desktop#banner-texto",
       "responsive-layout.mobile#banner-texto",
       // "flex-layout.row#deals",
-      // "rich-text#shelf-title",
       "flex-layout.row#titulo-vitrina-1",
       "flex-layout.row#shelf",
       "flex-layout.row#titulo-vitrina-2",
-      // "rich-text#shelf-title-2",
       "flex-layout.row#shelf-2",
-      //"rich-text#question",
-      //"rich-text#link",
       "newsletter"
     ]
   },
@@ -43,6 +39,9 @@
       },
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
+      "autoplay": {
+        "timeout": 3800
+      },
       "blockClass": "carousel"
     }
   },
@@ -93,13 +92,9 @@
         "tablet": 3,
         "phone": 2
       },
-      // "navigationStep": 1,
-      // "slideTransition": {
-      //   "speed": 700, 
-      //   "delay": 100
-      // },
       "autoplay": {
-        "timeout": 3800
+        "timeout": 3400,
+        "stopOnHover": false
       },
       "infinite": true,
       "fullWidth": true,
@@ -156,11 +151,6 @@
         "tablet": 3,
         "phone": 2
       },
-      // "navigationStep": 1,
-      // "slideTransition": {
-      //   "speed": 700, 
-      //   "delay": 100
-      // },
       "autoplay": {
         "timeout": 3800
       },
@@ -169,18 +159,6 @@
       "showNavigationArrows": "desktopOnly",
       "showPaginationDots": "always",
       "blockClass": "shelf"
-    }
-  },
-  "rich-text#question": {
-    "props": {
-      "text": "**Sitio de Prueba**",
-      "blockClass": "question"
-    }
-  },
-  "rich-text#link": {
-    "props": {
-      "text": "\n**Encuentranos**\nwww.redcetus.cl",
-      "blockClass": "link"
     }
   }
 }
