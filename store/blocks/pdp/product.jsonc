@@ -8,7 +8,11 @@
       "product-specification-group#table",
       "product-reviews",
       "product-questions-and-answers",
-      "flex-layout.row#vitrina-relacionados"
+      "flex-layout.row#vitrina-accesorios",
+      "flex-layout.row#vitrina-sugerencias",
+      "flex-layout.row#vitrina-relacionados",
+      "sandbox.product#primus",
+      "sandbox.product#xtech"
       // "shelf.relatedProducts"
     ]
   },
@@ -48,7 +52,7 @@
   "flex-layout.col#stack": {
     "children": ["stack-layout"],
     "props": {
-      "width": "48%",
+      "width": "56%",
       "rowGap": 0
     }
   },
@@ -87,7 +91,7 @@
     "props": {
       "preventVerticalStretch": true,
       "rowGap": 2,
-      "width": "48%"
+      "width": "40%"
     },
     "children": [
       "vtex.store-components:product-brand#pdp",
@@ -126,8 +130,13 @@
 
   "sku-selector": {
     "props": {
-      "variationsSpacing": 3,
-      "showValueNameForImageVariation": true
+      "variationsSpacing": 2,
+      "disableUnavailableSelectOptions": true,
+      "maxItems": 18,
+      "hideImpossibleCombinations": false,                 // muestra todas las combinaciones aunque sean imposibles
+      "showVariationsLabels": "variation",
+      "initialSelection": "empty"                         // cuando se ingresa a la pagina no hay valor seleccionado                   
+      //"visibleVariations": ["Talle"]              // las variaciones que se desea que aparezcan
     }
   },
 
@@ -157,7 +166,7 @@
   },
   "flex-layout.col#right-col-availability": {
     "props": {
-      "width": "48%",
+      "width": "40%",
       "preventVerticalStretch": true,
       "rowGap": 3,
       "blockClass": "info-availability"
@@ -187,7 +196,50 @@
       }
     }
   },
-
+  //-- Vitrina de Accesorios
+  "flex-layout.row#vitrina-accesorios": {
+    "props": {
+      "marginBottom": 7,
+      "blockClass": "rowVitrinaRelacionados"
+    },
+    "children": ["shelf.relatedProducts#accesorios"]
+  },
+  "shelf.relatedProducts#accesorios": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "recommendation": "accessories",
+      "productList": {
+        "titleText": "Accesorios",
+        "maxItems": 10,
+        "itemsPerPage": 5,
+        "arrows": true,
+        "minItemsPerPage": 2,
+        "gap": "ph3"
+      }
+    }
+  },
+  //-- Vitrina de Sugerencias
+  "flex-layout.row#vitrina-sugerencias": {
+    "props": {
+      "marginBottom": 7,
+      "blockClass": "rowVitrinaRelacionados"
+    },
+    "children": ["shelf.relatedProducts#sugerencias"]
+  },
+  "shelf.relatedProducts#sugerencias": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "recommendation": "suggestions",
+      "productList": {
+        "titleText": "Productos Sugeridos",
+        "maxItems": 10,
+        "itemsPerPage": 5,
+        "arrows": true,
+        "minItemsPerPage": 2,
+        "gap": "ph3"
+      }
+    }
+  },
   "flex-layout.row#specifications-title": {
     "children": ["rich-text#specifications"]
   },
@@ -226,6 +278,22 @@
         "minItemsPerPage": 2,
         "gap": "ph3"
       }
+    }
+  },
+
+  "sandbox.product#xtech": {
+    "props": {
+      "initialContent": "<div id='load-accvent-content' style='width: 1440px !important; margin: 0px auto;'></div><script id='accvent-loader' type='text/javascript' src='https://accvent.com/scripting/loader.js' data-search='XTK-530S' data-brand='XTECH' data-lang='es'></script>",
+      "allowCookies": true,
+      "hidden": false
+    }
+  },
+
+  "sandbox.product#primus": {
+    "props": {
+      "initialContent": "<head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Ejemplo de Contenido Sindicado con Carga Dinámica</title></head><div id='load-accvent-content'></div><script>var headID = document.getElementsByTagName('head')[0];var accventScript = document.createElement('script');accventScript.type = 'text/javascript';accventScript.async = true;accventScript.setAttribute('data-lang', 'es');accventScript.setAttribute('data-brand', 'PRIMUS');accventScript.setAttribute('data-search', 'PHS-210');accventScript.setAttribute('id', 'accvent-loader');accventScript.src = 'https://accvent.com/scripting/frameloader.js';accventScript.onload = function() {ini_iframe()}headID.appendChild(accventScript);</script>",
+      "allowCookies": false,
+      "hidden": false
     }
   }
 
