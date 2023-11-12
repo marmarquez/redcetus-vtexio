@@ -1,8 +1,39 @@
 .row--menu-row {
   padding-right: 24px;
 }
-
 .row--menu-row .rowContainer {
   align-items: flex-start;
 }
-
+.socialNetworkLink--facebook {
+  width: 26px;
+  height: 26px;
+  margin-right: 12px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.socialNetworkLink--instagram {
+  width: 26px;
+  height: 26px;
+  margin-right: 12px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.socialNetworkLink--twitter{
+  width: 20px;
+  height: 20px;
+  margin: 3px 5px 5px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.socialNetworkLink--twitter {
+  background-image: url(/arquivos/logo-x-twitter.svg);
+}
+.socialNetworkLink--facebook {
+  background-image: url(/arquivos/facebook.svg);
+}
+.socialNetworkLink--instagram {
+  background-image: url(/arquivos/instagram.svg);
+}
+.socialNetworkImage {
+  opacity: 0;
+}

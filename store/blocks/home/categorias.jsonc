@@ -1,0 +1,64 @@
+{
+    "flex-layout.row#categorias": {
+        "props": {
+            "colSizing": "equal",
+            "horizontalAlign": "between",
+            "marginBottom": 6,
+            "blockClass": "rowCategorias"
+        },
+        "children": [
+            "image#redes",
+            "image#telefonia",
+            "image#seguridad",
+            "image#computadores"
+        ]
+    },
+    "image#redes": {
+        "props": {
+          "src": "/arquivos/redes-1.png",
+
+          "link": {
+            "url": "/redes"
+          },
+          "title": "redes",
+          "alt": "redes",
+          "blockClass": "imgCategorias"
+        }
+      },
+      "image#telefonia": {
+        "props": {
+          "src": "/arquivos/telefonia-1.png",
+
+          "link": {
+            "url": "/telefonia"
+          },
+          "title": "telefonia",
+          "alt": "telefonia",
+          "blockClass": "imgCategorias"
+        }
+      },
+      "image#seguridad": {
+        "props": {
+          "src": "/arquivos/seguridad-1.png",
+
+          "link": {
+            "url": "/seguridad"
+          },
+          "title": "seguridad",
+          "alt": "seguridad",
+          "blockClass": "imgCategorias"
+        }
+      },
+      "image#computadores": {
+        "props": {
+          "src": "/arquivos/computadores-2.png",
+
+          "link": {
+            "url": "/computadores"
+          },
+          "title": "computadores",
+          "alt": "computadores",
+          "blockClass": "imgCategorias"
+        }
+      }
+}

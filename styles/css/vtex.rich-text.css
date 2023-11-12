@@ -73,22 +73,27 @@
   text-decoration: none;
   font-size: .9rem;
   margin: 0 2rem;
-  /* padding-bottom: .25rem; */
 }
 .paragraph--textoContacto{
   margin-bottom: 0px;
 }
 .paragraph--vermasVitrinas{
-  padding: .4rem .65rem;
-  color: #797979;
-  border: 1px solid #797979;
-  border-radius: 20px;
+  padding: .3rem .65rem;
+  color: #909090;
+  border: 1px solid #909090;
+  border-radius: 6px;
 }
 .link--vermasVitrinas{
-  color: #000;
+  color: #797979;
   text-decoration: none;
+  transition: color ease 200ms;
 }
-
+.link--vermasVitrinas:hover{
+  color: #141414;
+}
+.paragraph--ivaPdp{
+  margin: 0px;
+}
 @media (max-width: 768px){
   .headingLevel2--shelfTitle{
     font-size: 1.75rem;
@@ -97,6 +102,10 @@
     padding: .2rem .45rem;
     width: max-content;
     margin-right: .35rem;
+  }
+  .paragraph--textoFooterMob,
+  .paragraph--textoHeaderContacto{
+    margin: 0px;
   }
 }
 @media only screen and (min-width: 640px) {

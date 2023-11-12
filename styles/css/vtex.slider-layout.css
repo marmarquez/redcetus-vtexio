@@ -1,25 +1,18 @@
 .sliderLayoutContainer {
   justify-content: center;
 }
-.sliderLayoutContainer--carousel {
-  background-color: #F0F0F0;
-}
-
 .sliderTrackContainer {
   max-width: 1520px;
 }
-
 .paginationDotsContainer {
   margin-top: .5rem;
   margin-bottom: .5rem;
 }
-
 .layoutContainer--shelf {
   margin-top: 20px;
   margin-bottom: 20px;
   max-width: 96rem;
 }
-
 .slide--shelf {
   margin-bottom: 25px;
   padding-left: .5rem;
@@ -30,6 +23,7 @@
   margin: 0 .6rem;
   background-color: #c2c2c24b !important;
 }
+.sliderArrows--sliderMarcas,
 .sliderArrows--carousel{
   padding: .5rem;
   margin: 0 .6rem;
@@ -41,14 +35,6 @@
 .paginationDot--isActive{
   background-color: #000000;;
 }
-/* .slide--shelf{
-  border: 1px solid #dddddd;
-  border-radius: 8px;
-  transition: border 200ms ease;
-} */
-/* .slide--shelf:hover{
-  border: 1px solid #929292;
-} */
 .sliderTrack--shelf{
   grid-gap: 12px
 }
@@ -58,8 +44,13 @@
 .sliderArrows--sliderBannerTexto{
   padding: .35rem .75rem;
 }
-/* @media (min-width: 768px){
-  .sliderLayoutContainer--shelf{
-    margin: 0 4%;
+@media (min-width: 1028px){
+  .sliderTrack--sliderMarcas{
+    gap: 65px;
   }
-} */
+}
+@media (max-width: 1028px){
+  .sliderTrack--sliderMarcas{
+    gap: 30px;
+  }
+}

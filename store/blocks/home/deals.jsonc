@@ -16,7 +16,8 @@
       "flex-layout.col#deals2",
       "flex-layout.col#deals3",
       "flex-layout.col#deals4"
-    ]
+    ],
+    "title": "promociones home"
   },
   "flex-layout.col#deals1": {
     "props": {
@@ -111,7 +112,8 @@
     "props": {
       "blockClass": "deals"
     },
-    "children": ["slider-layout#banner-texto"]
+    "children": ["slider-layout#banner-texto"],
+    "title": "promociones home"
   },
   "slider-layout#banner-texto": {
     "props": {
@@ -137,6 +139,7 @@
       "flex-layout.col#deals2",
       "flex-layout.col#deals3",
       "flex-layout.col#deals4"
-    ]
+    ],
+    "title": "mobile slider promociones home"
   }
 }

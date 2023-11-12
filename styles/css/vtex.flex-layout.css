@@ -10,27 +10,22 @@
   margin-left: 5%;
   margin-right: 5%;  
 }
-
 .flexRowContent--menu-link {
   background-color: #303B46;
   color: #fff;
 }
-
 .flexRowContent--main-header {
   background-color: #fff;
 }
-
 .flexRowContent--main-header-mobile {
   align-items: center;
   padding: .4rem .5rem;
   background-color: #fff;
 }
-
 .flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
   color: #ffffff;
   font-size: 14px;
 }
-
 .flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
   color: #727273;
   font-size: 14px;
@@ -39,21 +34,17 @@
   background-color: #03054e;;
   padding: 1.4rem 0px;
 }
-
 .flexRow--deals .stretchChildrenWidth {
   align-items: center;
   line-height: 0;
 }
-
 .flexRow--deals .flexCol {
   align-items: center;
 }
-
 .flexCol--filterCol {
   max-width: 500px;
   min-width: 230px;
 }
-
 .flexCol--productCountCol {
   align-items: flex-start;
 }
@@ -106,8 +97,8 @@
 }
 .flexRowContent--rowBtnComprarPdp :global(.vtex-button){
   padding: .35rem .5rem;
-  background-color: #79b10a;
-  border-color: #79b10a;
+  background-color: #ad2e33;
+  border-color: #ad2e33;
   letter-spacing: 2px;
   font-weight: 500;
   transition: letter-spacing 300ms ease;
@@ -130,18 +121,26 @@
     padding: 0 1rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1028px) {
   .flexRowContent--menu-link,
   .flexRowContent--main-header {
     padding: 0 0.25rem;
   }
-}
-@media(min-width: 768px){
+  .flexRow--rowSliderMarcas,
   .flexRow--rowVitrina{
     margin: 0 4%;
   }
+  .flexRow--rowCategorias{
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .flexRowContent--rowCategorias{
+    grid-gap:20px;
+  }
 }
-@media (max-width: 768px){
+@media (max-width: 1028px){
+  .flexRow--rowCategorias,
+  .flexRow--rowSliderMarcas,
   .flexRow--rowVitrina{
     margin: 0 2%;
   }

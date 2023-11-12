@@ -24,21 +24,17 @@
     },
     "children": [
       "rich-text#copy-right",
-      "image#logo-vtex",
       "social-networks",
-      "accepted-payment-methods"
+      "image#logo-vtex",
+      "image#chile-compra",
+      "image#ccs",
+      "image#webpay"
     ]
   },
   "rich-text#copy-right": {
     "props": {
       "text": "© 2022 RedCetus | Todos los derechos reservados",
       "blockClass": "footer"
-    }
-  },
-  "image#logo-vtex": {
-    "props": {
-      "src": "/arquivos/logo-vtex.svg"
-      // "maxWidth": 80
     }
   },
   "social-networks": {
@@ -59,9 +55,39 @@
       ]
     }
   },
-  "accepted-payment-methods": {
+  "image#logo-vtex": {
     "props": {
-      "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
+      "src": "/arquivos/logo-vtex-color.png",
+      "link": {
+        "url": "https://vtex.com",
+        "openNewTab": true
+      },
+      "maxWidth": 70,
+      "title": "vtex",
+      "alt": "vtex"
+    }
+  },
+  "image#chile-compra": {
+    "props": {
+      "src": "/arquivos/logo-chilecompra-original.png",
+      "maxWidth": 130,
+      "title": "Chile Compra"
+    }
+  },
+  "image#ccs": {
+    "props": {
+      "src": "/arquivos/logo-ccs-1.png",
+      "maxWidth": 130,
+      "title": "Camara de comercio de Santiago",
+      "alt": "Camara de comercio de Santiago"
+    }
+  },
+  "image#webpay": {
+    "props": {
+      "src": "/arquivos/logoWebPay.png",
+      "maxWidth": 200,
+      "title": "Webpay",
+      "alt": "webpay"
     }
   },
 
@@ -84,7 +110,7 @@
   "flex-layout.col#footer-1-mobile": {
     "props": {
       "width": "98%",
-      "rowGap": 4,
+      "rowGap": 5,
       "horizontalAlign": "center",
       "verticalAlign": "middle",
       "blockClass": "colFooterMob"
@@ -93,8 +119,9 @@
       "rich-text#contacto-header",
       "social-networks",
       "image#logo-vtex",
-      "accepted-payment-methods",
-      "rich-text#footer-mobile"
+      "rich-text#footer-mobile",
+      "flex-layout.row#logos-ccs-comercio",
+      "image#webpay"
     ]
   },
   "rich-text#footer-mobile": {
@@ -102,5 +129,14 @@
       "text": "© 2022 RedCetus. Todos los derechos reservados.",
       "blockClass": "textoFooterMob"
     }
+  },
+  "flex-layout.row#logos-ccs-comercio": {
+    "props": {
+      "horizontalAlign": "around",
+      "preserveLayoutOnMobile": true,
+      "colGap": 4,
+      "marginBottom": 5
+    },
+    "children": ["image#chile-compra","image#ccs"]
   }
 }

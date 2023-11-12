@@ -1,0 +1,134 @@
+{
+  "flex-layout.row#marcas": {
+    "props": {
+      "marginTop": 7,
+      "marginBottom": 6,
+      "blockClass": "rowSliderMarcas"
+    },
+    "children": ["list-context.image-list#slider-marcas"],
+    "title": "slider marcas"
+  },
+  "list-context.image-list#slider-marcas": {
+    "children": ["slider-layout#marcas"],
+    "props": {
+      "height": 75,
+      "images": [
+        {
+          "image": "/arquivos/logo-cisco.png",
+          "link": {
+            "title": "cisco",
+            "url": "/cisco?map=brand"
+          },
+          "description": "cisco"
+        },
+        {
+          "image": "/arquivos/logo-ubiquiti.png",
+          "link": {
+            "title": "ubiquiti",
+            "url": "/ubiquiti?map=brand"
+          },
+          "description": "ubiquiti"
+        },
+        {
+          "image": "/arquivos/logo-dell.png",
+          "link": {
+            "title": "dell",
+            "url": "/dell?map=brand"
+          },
+          "description": "dell"
+        },
+        {
+          "image": "/arquivos/logo-mikrotik.png",
+          "link": {
+            "title": "mikrotik",
+            "url": "/mikrotik?map=brand"
+          },
+          "description": "mikrotik"
+        },
+        {
+          "image": "/arquivos/logo-yealink.png",
+          "link": {
+            "url": "/yealink?map=brand"
+          },
+          "description": "yealink"
+        },
+        {
+          "image":"/arquivos/logo-grandstream.png",
+          "link": {
+            "url": "/grandstream?map=brand"
+          },
+          "description": "grandstream"
+        },
+        {
+          "image": "/arquivos/logo-hikvision.png",
+          "link": {
+            "title": "hikvision",
+            "url": "/hikvision?map=brand"
+          },
+          "description": "hikvision"
+        },
+        {
+          "image": "/arquivos/logo-fortinet.png",
+          "link": {
+            "title": "fortinet",
+            "url": "/fortinet?map=brand"
+          },
+          "description": "fortinet"
+        },
+        {
+          "image":"/arquivos/logo-dahua.png",
+          "link": {
+            "title": "dahua",
+            "url": "/dahua?map=brand"
+          },
+          "description": "dahua"
+        },
+        {
+          "image": "/arquivos/logo-logitech.png",
+          "link": {
+            "title": "logitech",
+            "url": "/logitech?map=brand"
+          },
+          "description": "logitech"
+        },
+        {
+          "image": "/arquivos/logo-nexxt.png",
+          "link": {
+            "title": "nexxt",
+            "url": "/nexxt?map=brand"
+          },
+          "description": "nexxt"
+        },
+        {
+          "image": "/arquivos/logo-tplink.png",
+          "link": {
+            "title": "tp link",
+            "url": "/tp-link?map=brand"
+          },
+          "description": "tp link"
+        }
+      ]
+    },
+    "title": "slider marcas"
+  },
+  // slider marcas
+  "slider-layout#marcas": {
+    "props": {
+        "itemsPerPage": {
+          "desktop": 7,
+          "tablet": 5,
+          "phone": 3
+        },
+      "fullWidth": false,
+      "arrowSize": {
+        "desktop": 22,
+        "mobile": 16
+      },
+      "navigationStep": 2,
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": "sliderMarcas"
+    }
+  }
+}

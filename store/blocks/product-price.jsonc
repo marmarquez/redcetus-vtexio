@@ -1,16 +1,26 @@
 {
   "flex-layout.row#selling-price": {
     "props": {
-      "colGap": 2,
+      "colGap": 5,
       "preserveLayoutOnMobile": true,
       "preventHorizontalStretch": true,
-      "marginBottom": 4
+      "marginBottom": 2
     },
     "children": [
-      "product-selling-price"
+      "product-selling-price",
+      "rich-text#iva"
     ]
   },
-
+  "rich-text#iva": {
+    "props": {
+      "font": "t-heading-5",
+      "text": "C/IVA",
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "preventVerticalStretch": false,
+      "blockClass": "ivaPdp"
+    }
+  },
   "flex-layout.row#list-price-savings": {
     "props": {
       "colGap": 2,

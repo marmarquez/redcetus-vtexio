@@ -71,10 +71,6 @@
   },
   "product-images": {
     "props": {
-      // "aspectRatio": {
-      //   "desktop": "auto",
-      //   "phone": "16:9"
-      // },
       "maxHeight": 400,
       "displayThumbnailsArrows": true
     }
@@ -101,20 +97,21 @@
       "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
       // "product-installments",
-      "product-separator",
+      //"product-separator",
       "sku-selector",
       "product-quantity",
       "product-assembly-options",
       "product-gifts",
       "flex-layout.row#buy-button",
-      "availability-subscriber",
+      //"availability-subscriber",
+      "availability-notify",
       "shipping-simulator",
       "share#default"
     ]
-  },           
+  },         
   "vtex.store-components:product-brand#pdp":{
     "props": {
-      "displayMode": "logo",
+      "displayMode": "text",
       "fallbackToText": true,
       "height": 30,
       "withLink": "logoAndText",
