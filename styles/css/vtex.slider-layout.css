@@ -44,6 +44,9 @@
 .sliderArrows--sliderBannerTexto{
   padding: .35rem .75rem;
 }
+.sliderTrackContainer--sliderCategoria{
+  margin: 0 4%;
+}
 @media (min-width: 1028px){
   .sliderTrack--sliderMarcas{
     gap: 65px;

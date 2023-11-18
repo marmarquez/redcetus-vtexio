@@ -137,6 +137,14 @@
   .flexRowContent--rowCategorias{
     grid-gap:20px;
   }
+  .flexCol--colCategoria{
+    position: relative;
+  }
+  .flexColChild :nth-child(even){
+    position: absolute;
+    top: 60%;
+    right: 10%;
+  }
 }
 @media (max-width: 1028px){
   .flexRow--rowCategorias,

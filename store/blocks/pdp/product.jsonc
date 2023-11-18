@@ -111,9 +111,9 @@
   },         
   "vtex.store-components:product-brand#pdp":{
     "props": {
-      "displayMode": "text",
+      "displayMode": "logo",
       "fallbackToText": true,
-      "height": 30,
+      "height": 20,
       "withLink": "logoAndText",
       "blockClass": "pdpMarca"
     }
