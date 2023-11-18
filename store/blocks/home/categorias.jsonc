@@ -14,13 +14,15 @@
       "flex-layout.col#telefonia",
       "flex-layout.col#seguridad",
       "flex-layout.col#computadores"
-    ]
+    ],
+    "title": "cta categorias"
   },
   "flex-layout.col#redes": {
     "props": {
       "blockClass": "colCategoria"
     },
-    "children": ["image#redes","rich-text#boton-redes"]
+    "children": ["image#redes","rich-text#boton-redes"],
+    "title": "categoria 1"
   },
   "image#redes": {
     "props": {
@@ -41,7 +43,8 @@
       "props": {
         "blockClass": "colCategoria"
       },
-      "children": ["image#telefonia","rich-text#boton-telefonia"]
+      "children": ["image#telefonia","rich-text#boton-telefonia"],
+      "title": "categoria 2"
     },
     "image#telefonia": {
       "props": {
@@ -62,7 +65,8 @@
       "props": {
         "blockClass": "colCategoria"
       },
-      "children": ["image#seguridad","rich-text#boton-seguridad"]
+      "children": ["image#seguridad","rich-text#boton-seguridad"],
+      "title": "categoria 3"
     },
     "image#seguridad": {
       "props": {
@@ -83,7 +87,8 @@
       "props": {
         "blockClass": "colCategoria"
       },
-      "children": ["image#computadores","rich-text#boton-computadores"]
+      "children": ["image#computadores","rich-text#boton-computadores"],
+      "title": "categoria 4"
     },
     "image#computadores": {
       "props": {
@@ -100,6 +105,7 @@
       "blockClass": "btnCategoria"
     }
   },
+  //-- MOBILE
   "responsive-layout.mobile#categoria": {
     "children": ["slider-layout#categoria"]
   },
@@ -122,18 +128,23 @@
       "flex-layout.row#telefonia-mob",
       "flex-layout.row#seguridad-mob",
       "flex-layout.row#computadores-mob"
-    ]
+    ],
+    "title": "mob slider categorias"
   },
   "flex-layout.row#redes-mob": {
-    "children": ["flex-layout.col#redes"]
+    "children": ["flex-layout.col#redes"],
+    "title": "mob categoria 1"
   },
   "flex-layout.row#telefonia-mob": {
-    "children": ["flex-layout.col#telefonia"]
+    "children": ["flex-layout.col#telefonia"],
+    "title": "mob categoria 2"
   },
   "flex-layout.row#seguridad-mob": {
-    "children": ["flex-layout.col#seguridad"]
+    "children": ["flex-layout.col#seguridad"],
+    "title": "mob categoria 3"
   },
   "flex-layout.row#computadores-mob": {
-    "children": ["flex-layout.col#computadores"]
+    "children": ["flex-layout.col#computadores"],
+    "title": "mob categoria 4"
   }
 }

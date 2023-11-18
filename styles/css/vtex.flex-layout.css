@@ -140,10 +140,14 @@
   .flexCol--colCategoria{
     position: relative;
   }
-  .flexColChild :nth-child(even){
+  .flexColChild--colCategoria :nth-child(even){
     position: absolute;
     top: 60%;
     right: 10%;
+  }
+  .flexRow--productSpecificationGroup{
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 @media (max-width: 1028px){
