@@ -96,14 +96,11 @@
       "product-rating-summary",
       "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
-      // "product-installments",
-      //"product-separator",
       "sku-selector",
       "product-quantity",
       "product-assembly-options",
       "product-gifts",
       "flex-layout.row#buy-button",
-      //"availability-subscriber",
       "availability-notify",
       "shipping-simulator",
       "share#default"
@@ -133,7 +130,6 @@
       "hideImpossibleCombinations": false,                 // muestra todas las combinaciones aunque sean imposibles
       "showVariationsLabels": "variation",
       "initialSelection": "empty"                         // cuando se ingresa a la pagina no hay valor seleccionado                   
-      //"visibleVariations": ["Talle"]              // las variaciones que se desea que aparezcan
     }
   },
 
@@ -164,33 +160,29 @@
   },
   "flex-layout.col#right-col-availability": {
     "props": {
-      "width": "40%",
       "preventVerticalStretch": true,
-      "rowGap": 3,
+      "rowGap": 2,
+      "width": "40%",
       "blockClass": "info-availability"
     },
     "children": [
       "vtex.store-components:product-brand#pdp",
       "flex-layout.row#product-name",
       "product-identifier.product",
+      "product-rating-summary",
       "sku-selector",
-      "flex-layout.row#availability"
+      "availability-notify",
+      "share#default"
     ]
-  },
-  "flex-layout.row#availability": {
-    "props": {
-      "blockClass": "message-availability"
-    },
-    "children": ["availability-subscriber"]
   },
 
   "share#default": {
     "props": {
       "social": {
+        "Pinterest": true,
         "Facebook": true,
         "WhatsApp": true,
-        "Twitter": false,
-        "Pinterest": true
+        "Twitter": false
       }
     }
   },

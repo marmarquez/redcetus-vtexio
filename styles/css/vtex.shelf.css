@@ -6,6 +6,11 @@
     color: #434343;
     font-weight: 600;
 }
+.arrow {
+    padding: .3rem;
+    margin: 0 .6rem;
+    background-color: #c2c2c24b;
+}
 @media (max-width: 768px){
     .shelfContentContainer {
         margin-left: 2%;

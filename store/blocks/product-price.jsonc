@@ -25,9 +25,7 @@
     "props": {
       "colGap": 2,
       "preserveLayoutOnMobile": true,
-      "preventHorizontalStretch": true,
-      "marginBottom": 2,
-      "marginTop": 5
+      "preventHorizontalStretch": true
     },
     "children": [
       "product-list-price",
