@@ -4,3 +4,11 @@
 .cartIcon{
     color: #000;
 }
+.minicartCheckoutButton :global(.vtex-button__label) {
+    font-size: 0;
+}
+.minicartCheckoutButton :global(.vtex-button__label)::after {
+    content: "CONTINUAR COMPRA";
+    font-size: .95rem;
+    letter-spacing: 1px;
+}

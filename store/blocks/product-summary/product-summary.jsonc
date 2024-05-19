@@ -14,7 +14,7 @@
   },
   "vtex.store-components:product-brand#vitrina":{
     "props": {
-      "displayMode": "logo",
+      "displayMode": "text",
       "fallbackToText": true,
       "height": 20,
       "withLink": "logoAndText",
