@@ -45,7 +45,7 @@
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
       "autoplay": {
-        "timeout": 3800
+        "timeout": 10000
       },
       "blockClass": "carousel"
     },
