@@ -109,6 +109,47 @@
 .link--btnCategoria:hover{
   transform: translate(0, -4px);
 }
+.paragraph--btnCotiza{
+  margin: 0;
+  padding: .4rem 1.5rem;
+  border: 1px solid #0048FF;
+  border-radius: 4px;
+  color: #0048FF;
+}
+.link--btnCotiza{
+  text-decoration: none;
+  color: #0048FF;
+}
+.paragraph--subtituloServicios{
+  margin-top: 0px;
+  margin-bottom: 1rem;
+}
+.paragraph--tituloServicio{
+  font-weight: 700;
+  margin-bottom: .7rem;
+  color: #000;
+}
+.paragraph--textServicios{
+  margin-bottom: .1rem;
+  margin-top: 0;
+  color: #000;
+}
+.link--linkedin{
+  color: #000;
+  text-decoration: none;
+}
+.paragraph--linkedin{
+  display: flex;
+}
+.paragraph--linkedin::before{
+  content: "";
+  background-image: url("/arquivos/logo-linkedin.png");
+  background-repeat: no-repeat;
+  width: 22px;
+  background-size: contain;
+  background-position: center;
+  margin-right: 6px;
+}
 @media (max-width: 768px){
   .headingLevel2--shelfTitle{
     font-size: 1.75rem;
@@ -122,24 +163,26 @@
   .paragraph--textoHeaderContacto{
     margin: 0px;
   }
+  .paragraph--firstTitleServices{
+    margin: .75rem 5%;
+    font-size: 1.6rem;
+    color: #000;
+  }
 }
 @media only screen and (min-width: 640px) {
   .container--question .strong {
     font-size: 40px;
     line-height: 3rem;
   }
-
   .container--about {
     max-width: 85%;
   }
-
   .container--title {
     color: #03034E;
     font-size: 40px;
     font-weight: 700;
     max-width: 60%;
   }
-
   .container--title .paragraph {
     line-height: 1.3em;
   }

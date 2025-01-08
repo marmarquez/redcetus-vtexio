@@ -1,0 +1,625 @@
+{
+    "store.custom#landing-servicios": {
+      "children": [
+        "video#servicios",
+        "flex-layout.row#container-servicios-row1"
+      ]
+    },
+    "video#servicios": {
+      "props": {
+        "width": "100%",
+        "height": "400px",
+        "playsInline": true,
+        "loop": true,
+        "autoPlay": true,
+        "muted": true,
+        "src": "https://vimeo.com/1036590089",
+        "blockClass": "videoEl"
+      }
+    },
+    "flex-layout.row#container-servicios-row1": {
+      "props": {
+        "colJustify": "center",
+        "colSizing": "auto",
+        "blockClass": "servicios"
+      },
+      "children": [
+        "flex-layout.col#container-servicios-row1"
+      ]
+    },
+    "flex-layout.col#container-servicios-row1": {
+      "props": {
+        "horizontalAlign": "center",
+        "width": "100%"
+      },
+      "children": [
+        "rich-text#titulo-servicios",
+        "flex-layout.row#landing-servicios-row1",
+        "flex-layout.row#landing-servicios-row2",
+        "flex-layout.row#landing-servicios-row3",
+        "rich-text#titulo-partner-1",
+        "rich-text#titulo-partner-2",
+        "flex-layout.row#equipo-servicios",
+        "flex-layout.row#testimonio"
+      ]
+    },
+    "rich-text#titulo-servicios": {
+        "props": {
+          "text": "Acompañamiento en la modernización digital de tu negocio",
+          "font": "t-heading-3",
+          "blockClass": "firstTitleServices"
+        }
+      },
+    //-- servicio #1
+    "flex-layout.row#landing-servicios-row1": {
+      "props": {
+        "colSizing": "equal",
+        "colGap": 8,
+        "marginBottom": 4,
+        "horizontalAlign": "center",
+        "blockClass": "rowServicios"
+      },
+      "children": [
+        "flex-layout.col#landing-servicios-col1",
+        "flex-layout.col#landing-servicios-col2"
+      ]
+    },
+    "flex-layout.col#landing-servicios-col1": {
+      "props": {
+        "width": "50%"
+      },
+      "children": [
+        "rich-text#serv-titulo-1",
+        "flex-layout.row#servicio-1-row1"
+      ]
+    },
+    "rich-text#serv-titulo-1": {
+      "props": {
+        "text": "Cableado estructurado",
+        "font": "t-heading-4",
+        "blockClass": "tituloServicio"
+      }
+    },
+    "flex-layout.row#servicio-1-row1": {
+      "props": {
+        "colSizing": "auto",
+        "colGap": 6,
+        "blockClass": "servicios"
+      },
+      "children": [
+        "flex-layout.col#servicio-1-col1",
+        "flex-layout.col#servicio-1-col2"
+      ]
+    },
+    "flex-layout.col#servicio-1-col1": {
+      "children": [
+        "image#servicio1"
+      ]
+    },
+    "image#servicio1": {
+      "props": {
+        "src": "/arquivos/servicio-1.png"
+      }
+    },
+    "flex-layout.col#servicio-1-col2": {
+      "props": {
+        "width": "70%"
+      },
+      "children": [
+        "rich-text#descripcion-servicio-1",
+        "rich-text#boton-servicio-1"
+      ]
+    },
+    "rich-text#descripcion-servicio-1": {
+      "props": {
+        "text": "Diseñamos e instalamos redes de cableado, estructurado, garantizando conectividad eficiente y ordenada incluye instalación de cables y montaje de racks."
+      }
+    },
+    "rich-text#boton-servicio-1": {
+      "props": {
+        "text": "[Cotiza](/contacto)",
+        "blockClass": "btnCotiza"
+      }
+    },
+    //-- servicio #2
+    "flex-layout.col#landing-servicios-col2": {
+      "children": [
+        "rich-text#serv-titulo-2",
+        "flex-layout.row#servicio-2"
+      ]
+    },
+    "rich-text#serv-titulo-2": {
+      "props": {
+        "text": "Instalación y configuración de equipos de red",
+        "font": "t-heading-4",
+        "blockClass": "tituloServicio"
+      }
+    },
+    "flex-layout.row#servicio-2": {
+      "props": {
+        "colSizing": "auto",
+        "colGap": 6,
+        "blockClass": "servicios"
+      },
+      "children": [
+        "flex-layout.col#servicio-2-col1",
+        "flex-layout.col#servicio-2-col2"
+      ]
+    },
+    "flex-layout.col#servicio-2-col1": {
+      "children": [
+        "image#servicio2"
+      ]
+    },
+    "image#servicio2": {
+      "props": {
+        "src": "/arquivos/servicio-2.png"
+      }
+    },
+    "flex-layout.col#servicio-2-col2": {
+      "props": {
+        "width": "70%"
+      },
+        "children": [
+        "rich-text#descripcion-servicio-2",
+        "rich-text#boton-servicio-2"
+      ]
+    },
+    "rich-text#descripcion-servicio-2": {
+        "props": {
+        "text": "Configuramos equipos esenciales como switches, routers y firewalls, asegurando la seguridad y rendimiento óptimo de tu red."
+        }
+    },
+    "rich-text#boton-servicio-2": {
+        "props": {
+        "text": "[Cotiza](/contacto)",
+        "blockClass": "btnCotiza"
+        }
+    },
+    //-- row 2 
+    "flex-layout.row#landing-servicios-row2": {
+        "props": {
+          "colGap": 8,
+          "marginBottom": 4,
+          "blockClass": "rowServicios"
+        },
+        "children": [
+          "flex-layout.col#row2-servicios-col1",
+          "flex-layout.col#row2-servicios-col2"
+        ]
+    },
+    //-- servicio #3
+    "flex-layout.col#row2-servicios-col1": {
+        "children": [
+          "rich-text#servicio-3",
+          "flex-layout.row#servicio-3"
+        ]
+    },
+    "rich-text#servicio-3": {
+    "props": {
+        "text": "Proyectos de redes",
+        "font": "t-heading-4",
+        "blockClass": "tituloServicio"
+    }
+    },
+    "flex-layout.row#servicio-3": {
+      "props": {
+        "colSizing": "auto",
+        "colGap": 6,
+        "blockClass": "servicios"
+      },
+        "children": [
+        "flex-layout.col#servicio-3-col1",
+        "flex-layout.col#servicio-3-col2"
+        ]
+    },
+    "flex-layout.col#servicio-3-col1": {
+        "children": [
+            "image#servicio-3"
+        ]
+    },
+    "image#servicio-3": {
+    "props": {
+        "src": "/arquivos/servicio-3.png"
+    }
+    },
+    "flex-layout.col#servicio-3-col2": {
+      "props": {
+        "width": "70%"
+      },
+        "children": [
+        "rich-text#descripcion-servicio-3",
+        "rich-text#boton-servicio-3"
+        ]
+    },
+    "rich-text#descripcion-servicio-3": {
+        "props": {
+        "text": "Proveemos soluciones personalizadas en redes inalámbricas y fibra óptica, adaptadas a las necesidades de tu empresa."
+        }
+    },
+    "rich-text#boton-servicio-3": {
+        "props": {
+        "text": "[Cotiza](/contacto)",
+        "blockClass": "btnCotiza"
+        }
+    },
+    //-- servicio #4
+    "flex-layout.col#row2-servicios-col2": {
+        "children": [
+          "rich-text#servicio-4",
+          "flex-layout.row#servicio-4"
+        ]
+    },
+    "rich-text#servicio-4": {
+    "props": {
+        "text": "Proyectos de seguridad",
+        "font": "t-heading-4",
+        "blockClass": "tituloServicio"
+    }
+    },
+    "flex-layout.row#servicio-4": {
+      "props": {
+        "colSizing": "auto",
+        "colGap": 6,
+        "blockClass": "servicios"
+      },
+        "children": [
+        "flex-layout.col#servicio-4-col1",
+        "flex-layout.col#servicio-4-col2"
+        ]
+    },
+    "flex-layout.col#servicio-4-col1": {
+        "children": [
+            "image#servicio-4"
+        ]
+    },
+    "image#servicio-4": {
+    "props": {
+        "src": "/arquivos/servicio-4.png"
+    }
+    },
+    "flex-layout.col#servicio-4-col2": {
+      "props": {
+        "width": "70%"
+      },
+        "children": [
+        "rich-text#descripcion-servicio-4",
+        "rich-text#boton-servicio-4"
+        ]
+    },
+    "rich-text#descripcion-servicio-4": {
+        "props": {
+        "text": "Implementamos sistemas de seguridad como cámaras, controles de acceso y alarmas para proteger tus instalaciones."
+        }
+    },
+    "rich-text#boton-servicio-4": {
+      "props": {
+        "text": "[Cotiza](/contacto)",
+        "blockClass": "btnCotiza"
+      }
+    },
+    //-- row 3 
+    "flex-layout.row#landing-servicios-row3": {
+        "props": {
+          "colGap": 8,
+          "marginBottom": 8,
+          "blockClass": "rowServicios"
+        },
+        "children": [
+          "flex-layout.col#row3-servicios-col1",
+          "flex-layout.col#row3-servicios-col2"
+        ]
+    },
+    //-- servicio #5
+    "flex-layout.col#row3-servicios-col1": {
+      "children": [
+        "rich-text#servicio-5",
+        "flex-layout.row#servicio-5"
+      ]
+    },
+    "rich-text#servicio-5": {
+    "props": {
+        "text": "Proyectos de telefonía IP",
+        "font": "t-heading-4",
+        "blockClass": "tituloServicio"
+    }
+    },
+    "flex-layout.row#servicio-5": {
+      "props": {
+        "colSizing": "auto",
+        "colGap": 6,
+        "blockClass": "servicios"
+      },
+        "children": [
+        "flex-layout.col#servicio-5-col1",
+        "flex-layout.col#servicio-5-col2"
+        ]
+    },
+    "flex-layout.col#servicio-5-col1": {
+        "children": [
+            "image#servicio-5"
+        ]
+    },
+    "image#servicio-5": {
+    "props": {
+        "src": "/arquivos/servicio-5.png"
+    }
+    },
+    "flex-layout.col#servicio-5-col2": {
+      "props": {
+        "width": "70%"
+      },
+        "children": [
+        "rich-text#descripcion-servicio-5",
+        "rich-text#boton-servicio-5"
+        ]
+    },
+    "rich-text#descripcion-servicio-5": {
+        "props": {
+        "text": "Ofrecemos soluciones de telefonía IP con instalación de centrales telefónicas y teléfonos, facilitando la comunicación empresarial."
+        }
+    },
+    "rich-text#boton-servicio-5": {
+        "props": {
+        "text": "[Cotiza](/contacto)",
+        "blockClass": "btnCotiza"
+        }
+    },
+    //-- servicio #6
+    "flex-layout.col#row3-servicios-col2": {
+        "children": [
+          "rich-text#servicio-6",
+          "flex-layout.row#servicio-6"
+        ]
+    },
+    "rich-text#servicio-6": {
+    "props": {
+        "text": "Proyectos de salas de videoconferencia",
+        "font": "t-heading-4",
+        "blockClass": "tituloServicio"
+    }
+    },
+    "flex-layout.row#servicio-6": {
+      "props": {
+        "colSizing": "auto",
+        "colGap": 6,
+        "blockClass": "servicios"
+      },
+        "children": [
+        "flex-layout.col#servicio-6-col1",
+        "flex-layout.col#servicio-6-col2"
+        ]
+    },
+    "flex-layout.col#servicio-6-col1": {
+        "children": [
+            "image#servicio-6"
+        ]
+    },
+    "image#servicio-6": {
+    "props": {
+        "src": "/arquivos/servicio-6.png"
+    }
+    },
+    "flex-layout.col#servicio-6-col2": {
+      "props": {
+        "width": "70%"
+      },
+        "children": [
+        "rich-text#descripcion-servicio-6",
+        "rich-text#boton-servicio-6"
+        ]
+    },
+    "rich-text#descripcion-servicio-6": {
+        "props": {
+        "text": "Diseñamos salas de videoconferencia con tecnología avanzada para facilitar reuniones efectivas y colaborativas.."
+        }
+    },
+    "rich-text#boton-servicio-6": {
+        "props": {
+        "text": "[Cotiza](/contacto)",
+        "blockClass": "btnCotiza"
+        }
+    },
+  // -- row - equipo
+  "rich-text#titulo-partner-1": {
+    "props": {
+      "text": "Somos tu partner tecnológico",
+      "textAlignment": "CENTER",
+      "font": "t-heading-3",
+      "blockClass": "subtituloServicios"
+    }
+  },
+  "rich-text#titulo-partner-2": {
+    "props": {
+      "text": "Nuestro equipo está a tu disposición, conócenos:",
+      "textAlignment": "CENTER",
+      "font": "t-heading-4",
+      "blockClass": "subtituloServicios"
+    }
+  },
+  //-- row - equipo
+  "flex-layout.row#equipo-servicios": {
+    "props": {
+      "colSizing": "auto",
+      "colGap": 8,
+      "marginTop": 8,
+      "marginBottom": 2,
+      "colJustify": "between",
+      "blockClass": "teamServices"
+    },
+    "children": [
+      "flex-layout.col#equipo-servicios-col1",
+      "flex-layout.col#equipo-servicios-col2"
+    ]
+  },
+  "flex-layout.col#equipo-servicios-col1": {
+    "props": {
+      "width": "50%"
+    },
+    "children": [
+      "flex-layout.row#equipo-col1"
+    ]
+  },
+  "flex-layout.row#equipo-col1": {
+    "props": {
+      "colSizing": "auto",
+      "colGap": 4,
+      "marginBottom": 2,
+      "preserveLayoutOnMobile": true,
+      "blockClass": "servicios"
+    },
+    "children": [
+      "image#equipo-1",
+      "flex-layout.col#equipo-1"
+    ]
+  },
+  "image#equipo-1": {
+    "props": {
+      "src": "/arquivos/ricardo-dulon.png"
+    }
+  },
+  "flex-layout.col#equipo-1": {
+    "props": {
+      "width": "70%"
+    },
+    "children": [
+      "rich-text#equipo-1-titulo",
+      "rich-text#equipo-1-descripcion",
+      "rich-text#linkedin-1"
+    ]
+  },
+  "rich-text#equipo-1-titulo": {
+    "props": {
+      "text": "Ricardo Dulon",
+      "textAlignment": "LEFT",
+      "font": "t-heading-5",
+      "blockClass": "textServicios"
+    }
+  },
+  "rich-text#equipo-1-descripcion": {
+    "props": {
+      "text": "CEO | Director de proyectos",
+      "textAlignment": "LEFT",
+      "font": "t-body",
+      "blockClass": "textServicios"
+    }
+  },
+  "rich-text#linkedin-1": {
+    "props": {
+      "text": "[in/ricardodulon](/)",
+      "textAlignment": "LEFT",
+      "font": "t-body",
+      "blockClass": "linkedin"
+    }
+  },
+  //-- equipo - col 2
+  "flex-layout.col#equipo-servicios-col2": {
+    "props": {
+      "width": "50%"
+    },
+    "children": [
+      "flex-layout.row#equipo-col2"
+    ]
+  },
+  "flex-layout.row#equipo-col2": {
+    "props": {
+      "colSizing": "auto",
+      "colGap": 4,
+      "marginBottom": 2,
+      "preserveLayoutOnMobile": true,
+      "blockClass": "servicios"
+    },
+    "children": [
+      "image#equipo-2",
+      "flex-layout.col#equipo-2"
+    ]
+  },
+  "image#equipo-2": {
+    "props": {
+      "src": "/arquivos/carlos-garcia.png"
+    }
+  },
+  "flex-layout.col#equipo-2": {
+    "props": {
+      "width": "70%"
+    },
+    "children": [
+      "rich-text#equipo-2-titulo",
+      "rich-text#equipo-2-descripcion",
+      "rich-text#linkedin-2"
+    ]
+  },
+  "rich-text#equipo-2-titulo": {
+    "props": {
+      "text": "Carlos Gracía",
+      "textAlignment": "LEFT",
+      "font": "t-heading-5",
+      "blockClass": "textServicios"
+    }
+  },
+  "rich-text#equipo-2-descripcion": {
+    "props": {
+      "text": "Ingeniero en Telecomunicaciones",
+      "textAlignment": "LEFT",
+      "font": "t-body",
+      "blockClass": "textServicios"
+    }
+  },
+  "rich-text#linkedin-2": {
+    "props": {
+      "text": "[in/carlos-garcia-rebolledo](/)",
+      "textAlignment": "LEFT",
+      "font": "t-body",
+      "blockClass": "linkedin"
+    }
+  },
+  //-- row - testimonio
+  "flex-layout.row#testimonio": {
+    "props": {
+      "colGap": 8,
+      "marginTop": 8,
+      "paddingTop": 8,
+      "paddingBottom": 8,
+      "horizontalAlign": "center",
+      "blockClass": "testimonio"
+    },
+    "children": [
+      "flex-layout.col#testimonio-col1",
+      "flex-layout.col#testimonio-col2"
+    ]
+  },
+  "flex-layout.col#testimonio-col1": {
+    "props": {
+      "paddingLeft": 6,
+      "width": "60%",
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "rich-text#testimonio"
+    ]
+  },
+  "rich-text#testimonio": {
+    "props": {
+      "text": "Con RedCetus logramos modernizar las redes de nuestro Centro de Salud y entregar mayor conectividad a nuestros pacientes.",
+      "textAlignment": "LEFT",
+      "font": "t-heading-4",
+      "blockClass": "subtituloServicios"
+    }
+  },
+  "flex-layout.col#testimonio-col2": {
+    "props": {
+      "horizontalAlign": "center",
+      "paddingRight": 0,
+      "width": "20%"
+    },
+    "children": [
+      "image#testimonio"
+    ]
+  },
+  "image#testimonio": {
+    "props": {
+      "src": "/arquivos/logo-testimonio.png"
+    }
+  }
+}
+  

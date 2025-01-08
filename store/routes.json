@@ -19,5 +19,8 @@
   },
   "store.blog-search-result": {
     "path": "/blog/search/:term_id"
+  },
+  "store.custom#landing-servicios": {
+    "path": "/landing-servicios"
   }
 }

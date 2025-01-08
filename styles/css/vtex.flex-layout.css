@@ -115,6 +115,14 @@
 .flexRow--rowSearchBarMob{
   padding: 0 1rem;
 }
+.flexRowContent--testimonio{
+  background-color: #f5f5f5;
+}
+.flexRowContent--rowServicios{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
 @media screen and (min-width: 40em) {
   .flexRowContent--menu-link,
   .flexRowContent--main-header {
@@ -155,5 +163,8 @@
   .flexRow--rowSliderMarcas,
   .flexRow--rowVitrina{
     margin: 0 2%;
+  }
+  .flexRowContent--teamServices{
+    margin-top: 1rem;
   }
 }
