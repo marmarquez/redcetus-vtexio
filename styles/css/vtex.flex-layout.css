@@ -123,6 +123,13 @@
   margin-left: auto;
   margin-right: auto;
 }
+.flexCol--header{
+  background-image: url('/arquivos/header-servicio.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  background-size: 100%;
+}
 @media screen and (min-width: 40em) {
   .flexRowContent--menu-link,
   .flexRowContent--main-header {
@@ -166,5 +173,16 @@
   }
   .flexRowContent--teamServices{
     margin-top: 1rem;
+  }
+  .flexColChild--servicios{
+    width: 100%;
+  }
+  .flexRowContent--teamServices{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .flexCol--header{
+    background-size: auto;
   }
 }

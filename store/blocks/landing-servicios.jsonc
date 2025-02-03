@@ -1,26 +1,56 @@
 {
     "store.custom#landing-servicios": {
       "children": [
-        "video#servicios",
+        "flex-layout.row#header-servicios",
         "flex-layout.row#container-servicios-row1"
       ]
     },
-    "video#servicios": {
+    "flex-layout.row#header-servicios": {
       "props": {
+        "colJustify": "center",
+        "colSizing": "auto",
+        "preserveLayoutOnMobile": true,
+        "fullWidth": true,
+        "blockClass": "servicios"
+      },
+      "children": [
+        "flex-layout.col#header-servicios"
+      ]
+    },
+    "flex-layout.col#header-servicios": {
+      "props": {
+        "horizontalAlign": "center",
+        "verticalAlign": "middle",
         "width": "100%",
-        "height": "400px",
-        "playsInline": true,
-        "loop": true,
-        "autoPlay": true,
-        "muted": true,
-        "src": "https://vimeo.com/1036590089",
-        "blockClass": "videoEl"
+        "blockClass": "header"
+      },
+      "children": [
+        "rich-text#titulo-header",
+        "rich-text#button-header"
+      ]
+    },
+    "rich-text#titulo-header": {
+      "props": {
+        "text": "Servicios tecnológicos integrales para tus necesidades",
+        "font": "t-heading-3",
+        "textAlignment": "CENTER",
+        "blockClass": "titleHeader"
+      }
+    },
+    "rich-text#button-header": {
+      "props": {
+        "text": "[Contáctanos](/contacto)",
+        "font": "t-body",
+        "textAlignment": "CENTER",
+        "blockClass": "buttonHeader"
       }
     },
     "flex-layout.row#container-servicios-row1": {
       "props": {
         "colJustify": "center",
         "colSizing": "auto",
+        "preserveLayoutOnMobile": true,
+        "fullWidth": true,
         "blockClass": "servicios"
       },
       "children": [
@@ -29,8 +59,9 @@
     },
     "flex-layout.col#container-servicios-row1": {
       "props": {
-        "horizontalAlign": "center",
-        "width": "100%"
+        "horizontalAlign": "left",
+        "width": "100%",
+        "blockClass": "servicios"
       },
       "children": [
         "rich-text#titulo-servicios",
@@ -47,6 +78,7 @@
         "props": {
           "text": "Acompañamiento en la modernización digital de tu negocio",
           "font": "t-heading-3",
+          "textAlignment": "LEFT",
           "blockClass": "firstTitleServices"
         }
       },
@@ -425,6 +457,7 @@
     "props": {
       "text": "Somos tu partner tecnológico",
       "textAlignment": "CENTER",
+      "textPosition": "CENTER",
       "font": "t-heading-3",
       "blockClass": "subtituloServicios"
     }
@@ -433,6 +466,7 @@
     "props": {
       "text": "Nuestro equipo está a tu disposición, conócenos:",
       "textAlignment": "CENTER",
+      "textPosition": "CENTER",
       "font": "t-heading-4",
       "blockClass": "subtituloServicios"
     }
@@ -441,10 +475,10 @@
   "flex-layout.row#equipo-servicios": {
     "props": {
       "colSizing": "auto",
-      "colGap": 8,
+      "colGap": 5,
       "marginTop": 8,
       "marginBottom": 2,
-      "colJustify": "between",
+      "colJustify": "center",
       "blockClass": "teamServices"
     },
     "children": [
@@ -454,7 +488,7 @@
   },
   "flex-layout.col#equipo-servicios-col1": {
     "props": {
-      "width": "50%"
+      "width": "34%"
     },
     "children": [
       "flex-layout.row#equipo-col1"
@@ -466,6 +500,7 @@
       "colGap": 4,
       "marginBottom": 2,
       "preserveLayoutOnMobile": true,
+      "preventVerticalStretch": true,
       "blockClass": "servicios"
     },
     "children": [
@@ -475,7 +510,8 @@
   },
   "image#equipo-1": {
     "props": {
-      "src": "/arquivos/ricardo-dulon.png"
+      "src": "/arquivos/ricardo-dulon.png",
+      "blockClass": "team"
     }
   },
   "flex-layout.col#equipo-1": {
@@ -506,7 +542,7 @@
   },
   "rich-text#linkedin-1": {
     "props": {
-      "text": "[in/ricardodulon](/)",
+      "text": "[in/ricardodulon](https://www.linkedin.com/in/ricardodulon/?target=_blank)",
       "textAlignment": "LEFT",
       "font": "t-body",
       "blockClass": "linkedin"
@@ -515,7 +551,7 @@
   //-- equipo - col 2
   "flex-layout.col#equipo-servicios-col2": {
     "props": {
-      "width": "50%"
+      "width": "34%"
     },
     "children": [
       "flex-layout.row#equipo-col2"
@@ -527,6 +563,7 @@
       "colGap": 4,
       "marginBottom": 2,
       "preserveLayoutOnMobile": true,
+      "preventVerticalStretch": true,
       "blockClass": "servicios"
     },
     "children": [
@@ -536,7 +573,8 @@
   },
   "image#equipo-2": {
     "props": {
-      "src": "/arquivos/carlos-garcia.png"
+      "src": "/arquivos/carlos-garcia.png",
+      "blockClass": "team"
     }
   },
   "flex-layout.col#equipo-2": {
@@ -567,7 +605,7 @@
   },
   "rich-text#linkedin-2": {
     "props": {
-      "text": "[in/carlos-garcia-rebolledo](/)",
+      "text": "[in/carlos-garcia-rebolledo](https://www.linkedin.com/in/carlos-garcia-rebolledo/?target=_blank)",
       "textAlignment": "LEFT",
       "font": "t-body",
       "blockClass": "linkedin"
@@ -590,7 +628,6 @@
   },
   "flex-layout.col#testimonio-col1": {
     "props": {
-      "paddingLeft": 6,
       "width": "60%",
       "verticalAlign": "middle"
     },
@@ -603,7 +640,7 @@
       "text": "Con RedCetus logramos modernizar las redes de nuestro Centro de Salud y entregar mayor conectividad a nuestros pacientes.",
       "textAlignment": "LEFT",
       "font": "t-heading-4",
-      "blockClass": "subtituloServicios"
+      "blockClass": "quote"
     }
   },
   "flex-layout.col#testimonio-col2": {
