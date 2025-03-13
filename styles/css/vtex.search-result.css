@@ -18,10 +18,24 @@
   border-bottom: 1px #E7E9EE solid;
 }
 .galleryTitle--layout{
-  font-size: 2rem;    
+  margin-top: 0.75rem;
+  margin-bottom: .75rem;
+  font-size: 1.6rem;
 }
 .filterItem :global(.vtex-checkbox__line-container){
   display: flex;
   align-items: center;
   margin-bottom: 7px;
+}
+.buttonShowMore :global(.vtex-button){
+  background-color: #fff;
+  color: #039;
+  border-width: 0px;
+  text-decoration: underline;
+}
+.filterTemplateOverflow :global(.vtex-slider__values-container){
+  justify-content: space-between;
+}
+.filterTemplateOverflow :global(.vtex-slider__dash){
+  display: none;
 }

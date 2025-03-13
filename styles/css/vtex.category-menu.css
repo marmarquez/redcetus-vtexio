@@ -1,13 +1,20 @@
 .firstLevelLink {  
     margin-left: 0px;
     margin-right:0px;
+    font-weight: 600;
 }
-
 .firstLevelList {  
     padding-left: 2px;
     padding-right: 2px;
 }
-
+.firstLevelLink:hover {
+    color: #041f77;
+    text-decoration: none;
+}
+.secondLevelLink:hover {
+    text-decoration: none;
+    color: #2a2a2a;
+}
 .section--department {
     background-color: #303B46;
     color: #fff;
@@ -15,13 +22,29 @@
     margin: 0px;
     border: 0px;
 }
-
-.departmentLink {
-    color: #fff;
-}
-
 .itemContainer--department {
     padding-top: 0px;
     margin: 0px;
     border: 0px;
+}
+.submenuList {
+    width: fit-content;
+}
+.section--category{
+    width: fit-content;
+    margin: 1rem auto;
+}
+.itemContainer--category{
+    max-height: 32rem;
+    box-shadow: 0px 3px 8px 0px rgb(151, 151, 151);
+    border-bottom: 1px solid #d6d6d6;
+}
+.departmentLink {
+    color: #fff;
+    margin-right: 4rem;
+    margin-left: 0px;
+    padding: .5rem 0;
+}
+.submenuItem {
+    margin-right: 1.5rem;
 }

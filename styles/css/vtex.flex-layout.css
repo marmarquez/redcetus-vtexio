@@ -1,5 +1,4 @@
-.flexRowContent--menu-link,
-.flexRowContent--main-header {
+.flexRowContent--menu-link {
   padding: 0 .5rem;
 }
 .flexRow--rowProductInformation{
@@ -13,9 +12,11 @@
 .flexRowContent--menu-link {
   background-color: #303B46;
   color: #fff;
+  padding-left: 5%;
 }
-.flexRowContent--main-header {
-  background-color: #fff;
+.flexRow--main-header{
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .flexRowContent--main-header-mobile {
   align-items: center;
@@ -97,8 +98,8 @@
 }
 .flexRowContent--rowBtnComprarPdp :global(.vtex-button){
   padding: .35rem .5rem;
-  background-color: #ad2e33;
-  border-color: #ad2e33;
+  /* background-color: #4DA9E4;
+  border-color: #4DA9E4; */
   letter-spacing: 2px;
   font-weight: 500;
   transition: letter-spacing 300ms ease;
@@ -107,7 +108,7 @@
   letter-spacing: 3px;
 }
 .flexRow--rowResultPdc{
-  margin: .5rem 2.5%;
+  margin: 0 2.5%;
 }
 .flexRow--rowTitleSearch{
   margin: 0 2.5%;
@@ -130,17 +131,7 @@
   height: 300px;
   background-size: 100%;
 }
-@media screen and (min-width: 40em) {
-  .flexRowContent--menu-link,
-  .flexRowContent--main-header {
-    padding: 0 1rem;
-  }
-}
 @media screen and (min-width: 1028px) {
-  .flexRowContent--menu-link,
-  .flexRowContent--main-header {
-    padding: 0 0.25rem;
-  }
   .flexRow--rowSliderMarcas,
   .flexRow--rowVitrina{
     margin: 0 4%;

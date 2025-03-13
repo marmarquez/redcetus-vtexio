@@ -9,9 +9,9 @@
   opacity: 1;
 }
 .element :global(.vtex-button){
-  background-color: #fff;
-  border-color: #ad2e33;
-  color: #ad2e33;
+  /* background-color: #4DA9E4;
+  border-color: #4DA9E4; */
+  /* color: #fff; */
   font-size: .9rem;
   transition: letter-spacing 200ms ease;
 }

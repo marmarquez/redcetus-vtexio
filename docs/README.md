@@ -3,4 +3,4 @@
 Template basado en el Store Theme.
 
 colores:
-#ad2e33
+#4DA9E4

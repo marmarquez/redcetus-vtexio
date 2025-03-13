@@ -189,7 +189,8 @@
   //-- Vitrina de Accesorios
   "flex-layout.row#vitrina-accesorios": {
     "props": {
-      "marginBottom": 7,
+      "fullWidth": true,
+      "marginBottom": 5,
       "blockClass": "rowVitrinaRelacionados"
     },
     "children": ["shelf.relatedProducts#accesorios"]
@@ -211,7 +212,8 @@
   //-- Vitrina de Sugerencias
   "flex-layout.row#vitrina-sugerencias": {
     "props": {
-      "marginBottom": 7,
+      "fullWidth": true,
+      "marginBottom": 5,
       "blockClass": "rowVitrinaRelacionados"
     },
     "children": ["shelf.relatedProducts#sugerencias"]
@@ -244,13 +246,14 @@
 
   "flex-layout.row#description": {
     "props": {
-      "marginBottom": 2,
+      "fullWidth": true,
       "blockClass": "rowDescripcionPdp"
     },
     "children": ["product-description"]
   },
   "flex-layout.row#vitrina-relacionados": {
     "props": {
+      "fullWidth": true,
       "marginBottom": 7,
       "blockClass": "rowVitrinaRelacionados"
     },
