@@ -121,7 +121,7 @@
       "title": "Redcetus",
       "href": "/",
       "url": "/arquivos/logo-redcetus.png",
-      "width": "180"
+      "width": "220"
     }
   },
 
@@ -162,7 +162,7 @@
       "title": "Redcetus",
       "href": "/",
       "url": "/arquivos/logo-redcetus.png",
-      "width": "110"
+      "width": "145"
     }
   },
   "flex-layout.row#search-bar-mobile": {
