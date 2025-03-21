@@ -3,9 +3,9 @@
     "blocks": [
       "list-context.image-list#demo",
       "__fold__.experimentalLazyAssets",
+      "flex-layout.row#marcas",
       "responsive-layout.desktop#banner-texto",
       "responsive-layout.mobile#banner-texto",
-      "flex-layout.row#marcas",
       // "flex-layout.row#deals",
       "flex-layout.row#titulo-vitrina-1",
       "flex-layout.row#shelf",

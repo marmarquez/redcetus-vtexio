@@ -9,7 +9,7 @@
       "product-list-price#summary",
       "flex-layout.row#selling-price-savings",
       // "product-installments#summary",
-      "add-to-cart-button"
+      "add-to-cart-button#shelf"
     ]
   },
   "vtex.store-components:product-brand#vitrina":{
@@ -94,6 +94,11 @@
         "discount"
       ],
       "blockClass": "summary"
+    }
+  },
+  "add-to-cart-button#shelf": {
+    "props": {
+      "unavailableText": "Consultar por stock"
     }
   }
 }

@@ -9,14 +9,11 @@
   opacity: 1;
 }
 .element :global(.vtex-button){
-  /* background-color: #4DA9E4;
-  border-color: #4DA9E4; */
-  /* color: #fff; */
   font-size: .9rem;
-  transition: letter-spacing 200ms ease;
+  transition: all 200ms ease;
 }
 .element :global(.vtex-button):hover{
-  letter-spacing: 2px;
+
 }
 .nameContainer {
   justify-content: start;

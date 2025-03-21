@@ -1,6 +1,3 @@
-.flexRowContent--menu-link {
-  padding: 0 .5rem;
-}
 .flexRow--rowProductInformation{
   margin-left: 5%;
   margin-right: 5%;
@@ -10,9 +7,9 @@
   margin-right: 5%;  
 }
 .flexRowContent--menu-link {
-  background-color: #303B46;
+  background-color: #003399;
   color: #fff;
-  padding-left: 5%;
+  padding: 0 .5rem 0 5%;
 }
 .flexRow--main-header{
   margin-left: 5%;
@@ -32,8 +29,8 @@
   font-size: 14px;
 }
 .flexRow--deals {
-  background-color: #03054e;;
-  padding: 1.4rem 0px;
+  background-color: #4DA9E4;;
+  padding: .8rem 0px;
 }
 .flexRow--deals .stretchChildrenWidth {
   align-items: center;
@@ -98,14 +95,13 @@
 }
 .flexRowContent--rowBtnComprarPdp :global(.vtex-button){
   padding: .35rem .5rem;
-  /* background-color: #4DA9E4;
-  border-color: #4DA9E4; */
   letter-spacing: 2px;
   font-weight: 500;
-  transition: letter-spacing 300ms ease;
+  transition: all 300ms ease;
 }
 .flexRowContent--rowBtnComprarPdp :global(.vtex-button):hover{
-  letter-spacing: 3px;
+  background-color: #337aa7;
+  border-color: #337aa7;
 }
 .flexRow--rowResultPdc{
   margin: 0 2.5%;

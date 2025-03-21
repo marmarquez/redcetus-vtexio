@@ -74,7 +74,7 @@
           "muted-5": "#f2f4f5"
         },
         "hover-background": {
-          "action-primary": "#003399",
+          "action-primary": "#337aa7",
           "action-secondary": "#dbe9fd",
           "emphasis": "#dd1659",
           "success": "#8bc34a",
@@ -166,7 +166,7 @@
           "muted-5": "#4DA9E4"
         },
         "hover-border": {
-          "action-primary": "#003399",
+          "action-primary": "#337aa7",
           "action-secondary": "#dbe9fd",
           "emphasis": "#dd1659",
           "success": "#8bc34a",
