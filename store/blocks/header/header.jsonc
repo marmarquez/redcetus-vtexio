@@ -47,7 +47,7 @@
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["logo#logo-desktop"]
+    "children": ["image#logo-desktop"]
   },
   "rich-text#contacto-header": {
     "props":{
@@ -116,12 +116,14 @@
       "width": "grow"
     }
   },
-  "logo#logo-desktop": {
+  "image#logo-desktop": {
     "props": {
+      "src": "/arquivos/logo-redcetus.png",
       "title": "Redcetus",
-      "href": "/",
-      "url": "/arquivos/logo-redcetus.png",
-      "width": "220"
+      "link": {
+        "url": "/"
+      },
+      "maxWidth": 220
     }
   },
 
@@ -135,7 +137,7 @@
   "flex-layout.row#1-mobile": {
     "children": [
       "category-menu#mobile",
-      "logo#logo-mobile",
+      "image#logo-mobile",
       "flex-layout.col#spacer",
       "login",
       "minicart.v2"
@@ -157,12 +159,14 @@
       "mobileMode": true
     }
   },
-  "logo#logo-mobile": {
+  "image#logo-mobile": {
     "props": {
+      "src": "/arquivos/logo-redcetus.png",
       "title": "Redcetus",
-      "href": "/",
-      "url": "/arquivos/logo-redcetus.png",
-      "width": "145"
+      "link": {
+        "url": "/"
+      },
+      "maxWidth": 145
     }
   },
   "flex-layout.row#search-bar-mobile": {
